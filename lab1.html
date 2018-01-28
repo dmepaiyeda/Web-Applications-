@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Art Work Search </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lab1-Team.css">
+  </head>
+
+  <body>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Advanced Art Work Search</a>
+          </div>
+          <div class="input-group">
+            <input id="textbox" type="text" class="form-control">
+          </div>
+        </div>
+      </nav>
+
+      <div class="form-group" id="right">
+        <label for="rightBox" id="rightLabel">Genre:  </label>
+        <select class="form-control" id="rightBox">
+          <option value = "0">Baroque</option>
+          <option value = "1">Renaissance</option>
+          <option value = "2">Realism</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="leftBox" id="leftLabel">Action:</label>
+        <select class="form-control" width:"100px" id="leftBox">
+          <option value = "0">Archive</option>
+          <option value = "1">Edit</option>
+          <option value = "2">Delete</option>
+          <option value = "3">Collection</option>
+        </select>
+      </div>
+
+      <table border = "1">
+          <tr>
+            <th> Select </th>
+            <th> Painting </th>
+            <th> Title </th>
+            <th> Artist </th>
+            <th> Year </th>
+            <th> Genre </th>
+            <th> Actions </th>
+          </tr>
+
+          <tr>
+            <td> <input name="group100" type = "radio" class="rbutton"></input> </td>
+            <td> <img  id="prodigal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg/1200px-Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg"></td>
+            <td id = "text">The Return of the Prodigal Son</td>
+            <td id = "text">Rembrandt van Rijn</td>
+            <td id = "text">1669</td>
+            <td id = "text">Baroque</td>
+            <td id = "text"><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
+          </tr>
+
+          <tr>
+            <td> <input name="group100" type = "radio" class="rbutton"></input> </td>
+            <td> <img id="mona" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg">
+            <td id = "text">Mona Lisa</td>
+            <td id = "text">Leonardo da Vinci</td>
+            <td id = "text">1503</td>
+            <td id = "text">Renaissance</td>
+            <td id = "text"><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
+          </tr>
+
+          <tr>
+            <td> <input name="group100" type = "radio" class="rbutton"></input> </td>
+            <td> <img id="bon" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Gustave_Courbet_-_Bonjour_Monsieur_Courbet_-_Mus%C3%A9e_Fabre.jpg">
+            <td id = "text">Bonjour, Monsieur Courbet</td>
+            <td id = "text">Gusatve Courbet</td>
+            <td id = "text">1854</td>
+            <td id = "text">Realism</td>
+            <td id = "text"><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
+          </tr>
+
+      </table>
+
+  </body>
+</html>
+
+
+
+
