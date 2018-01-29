@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:700');
+
+.font{
+    font-family: 'Cinzel', serif;
+}
+
+body{
+    background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A) ;
+}
