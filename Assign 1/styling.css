@@ -17,3 +17,41 @@
 .padding{
   padding-top: 200px;
 }
+
+
+body{
+    background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A) ;
+}
+
+/*changes background of navigation bar*/
+.navbar.navbar-inverse{
+    background-color: #291F1E;
+    border-color: #291F1E;
+    color: #EEE0CB;
+}
+
+/*changes colour of title of webpage*/
+.navbar.navbar-inverse .navbar-brand,
+.navbar.navbar-inverse .navbar-brand:hover,
+.navbar.navbar-inverse .navbar-brand:focus{
+    color: #EEE0CB;
+}
+
+/*changes colour of list item that mouse is over*/
+.navbar.navbar-inverse .navbar-nav > li > a:hover,
+.navbar.navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #3C3332;
+}
+
+/*changes colour of selected item*/
+.navbar.navbar-inverse .navbar-nav > .active > a,
+.navbar.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #EEE0CB;
+    background-color: #3C3332;
+}
+
+/*....unsure as of right now*/
+.navbar.navbar-inverse .navbar-text {
+    color: #EEE0CB;
+}
