@@ -11,7 +11,9 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="./styling.css">
-
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="artworkstyle.css">
+    <script src="animation.js"></script>
 
 </head>
 <body>
@@ -38,11 +40,11 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Art Works</a>
                     <ul class="dropdown-menu">
-                        <li><a href="campbell.html">Campbell's Soup Can</a></li>
-                        <li><a href="starry.html">Starry Night</a></li>
-                        <li><a href="venus.html">The Birth of Venus</a></li>
-                        <li><a href="supper.html">The Last Supper</a></li>
-                        <li><a href="weeping.html">The Weeping Woman</a></li>
+                        <li><a id="CSC">Campbell's Soup Can</a></li>
+                        <li><a href="">Starry Night</a></li>
+                        <li><a href="">The Birth of Venus</a></li>
+                        <li><a href="">The Last Supper</a></li>
+                        <li><a href="">The Weeping Woman</a></li>
                     </ul>
                 </li>
             </ul>
@@ -55,17 +57,36 @@
           <h1 class = "padding"> Art Gallery </h1>
           <h4> Web Applications (CPS 630) </h4>
         </div>
-          <h3> Deborah Mepaiyeda <br> 500713214 <br> </h3>
-            <h3> Sarah MacCallum <br> 500684093 </h3>
+          <h3 class="name"> Deborah Mepaiyeda <br> 500713214 <br> </h3>
+            <h3 class="name"> Sarah MacCallum <br> 500684093 </h3>
       </div>
     </div>
 
+
+  <div class="content container-fluid" id="campbells">
+      <div class="col-sm-3 col-md-6 col-lg-4">
+          <p>Date of Production: <strong>1962</strong><br><br>
+              Type of the Painting colors: <strong>Synthetic Polymer Paint</strong> <br><br>
+              Dimensions of the Painting: <strong>51 cm x 41 cm</strong> <br><br>
+              Location of painting: <strong>Museum of Modern Art</strong> <br><br>
+              Artist: <strong>Andy Warhol</strong> <br><br>
+              Price: <strong>N/A</strong> <br><br>
+              Genres:  <strong>Pop Art</strong>
+          </p>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-6">
+          <img id="soup" src="http://1.bp.blogspot.com/-zekY4NLo1_c/UD_uVdNgEnI/AAAAAAAAAnA/rZuPJJ35Y4w/s1600/32+campbells.jpeg">
+      </div>
+  </div>
+
   <!-- Footer section-->
   <footer class = "footer font">
-      <div class = "center">
+      <!--<div class = "center"> -->
         <p>Copyright &copy; Deborah Mepaiyeda & Sarah MacCallum 2018</p>
 
-     </div>
+     <!-- </div> -->
   </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 </body>
 </html>
