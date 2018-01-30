@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel:700');
 
 
-#soup{
+#soup, #snight, #lasts, #bvenus{
     width:  85%;
     height: 85%;
+}
+
+#wwoman {
+    width: 60%;
 }
 
 p{
@@ -12,17 +16,3 @@ p{
 }
 
 
-/*
-Picasso
-https://i.pinimg.com/originals/6c/f6/78/6cf6785c2931400bc048b06a597f23bd.jpg
-
-Van Gogh
-https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg
-
-da Vinci
-https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Leonardo_da_Vinci_-_Last_Supper_%28copy%29_-_WGA12732.jpg/350px-Leonardo_da_Vinci_-_Last_Supper_%28copy%29_-_WGA12732.jpg
-
-Botticelli
-https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/450px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg
-
- */
