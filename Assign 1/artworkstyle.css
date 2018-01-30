@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel:700');
 
-.font{
-    font-family: 'Cinzel', serif;
+body{
+    background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A) ;
 }
 
-body{
+#soup{
+    width:  85%;
+    height: 85%;
+}
+p{
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+}
+
+.footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 6px;
+    background-color: #efefef;
+    text-align: center;
     background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A) ;
 }
