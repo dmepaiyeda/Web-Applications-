@@ -3,10 +3,19 @@
 #soup, #snight, #lasts, #bvenus{
     width:  85%;
     height: 85%;
+    border: 1rem solid;
+    margin-bottom: 25px;
 }
 
 #wwoman {
     width: 60%;
+    border:1rem solid;
+    margin-bottom: 25px;
+}
+
+#angelo{
+  border: 1rem solid;
+  margin-bottom: 25px;
 }
 
 p, .famousworks{
@@ -17,4 +26,6 @@ p, .famousworks{
 #monet,#gogh,#davinci, #warhol{
   width: 85%;
   height: 85%;
+  border: 1rem solid;
+  margin-bottom: 25px;
 }
