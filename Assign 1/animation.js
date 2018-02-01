@@ -23,25 +23,25 @@ $(document).ready(function ()
             $("div.content").hide();
             $("#weeping").show();
         });
-        $("#AW").click(function(){
+        $("#CM").click(function(){
             $("div.content").hide();
-            $("#").show();
+            $("#claude").show();
+        });
+        $("#VV").click(function(){
+            $("div.content").hide();
+            $("#vincent").show();
+        });
+        $("#LV").click(function(){
+            $("div.content").hide();
+            $("#leonardo").show();
+        });
+        $("#MM").click(function(){
+            $("div.content").hide();
+            $("#michel").show();
         });
         $("#AW").click(function(){
             $("div.content").hide();
-            $("#").show();
-        });
-        $("#AW").click(function(){
-            $("div.content").hide();
-            $("#").show();
-        });
-        $("#AW").click(function(){
-            $("div.content").hide();
-            $("#").show();
-        });
-        $("#AW").click(function(){
-            $("div.content").hide();
-            $("#").show();
+            $("#andy").show();
         });
 
 });

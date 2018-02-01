@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Art Gallery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- bootstrap jquery and javascript links -->
+    <!-- bootstrap, jquery and javascript links -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -31,8 +31,8 @@
                         <li><a id="AW">Andy Warhol</a></li>
                         <li><a id="CM">Claude Monet</a></li>
                         <li><a id="LV">Leonardo da Vinci</a></li>
-                        <li><a id="#">Michelangelo</a></li>
-                        <li><a id="#">Vincent Van Gogh</a></li>
+                        <li><a id="MM">Michelangelo</a></li>
+                        <li><a id="VV">Vincent Van Gogh</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -51,16 +51,17 @@
   </div>
     <div id = "home">
       <div class = "center font">
-        <div>
-          <h1 class = "padding"> Art Gallery </h1>
-          <h4> Web Applications (CPS 630) </h4>
-        </div>
-          <h3 class="name"> Deborah Mepaiyeda <br> 500713214 <br> </h3>
+        <div class = "padding" >
+            <h1 > Art Gallery </h1>
+            <h4> Web Applications (CPS 630) </h4>
+
+            <h3 class="name"> Deborah Mepaiyeda <br> 500713214 <br> </h3>
             <h3 class="name"> Sarah MacCallum <br> 500684093 </h3>
+          </div>
       </div>
     </div>
 
-
+<!--Artworks-->
   <div class="content container-fluid" id="campbells">
       <div class="col-sm-3 col-md-6 col-lg-4">
           <p>Date of Production: <strong>1962</strong><br><br>
@@ -140,6 +141,110 @@
           <img id="wwoman" src="https://i.pinimg.com/originals/6c/f6/78/6cf6785c2931400bc048b06a597f23bd.jpg">
       </div>
   </div>
+
+<!--Artists-->
+  <div class="content container-fluid" id="claude">
+      <div class="col-sm-3 col-md-6 col-lg-4">
+          <p> Date of Birth: <strong>Nov. 14, 1840</strong><br><br>
+              Date of Death: <strong>Dec. 5, 1926</strong> <br><br>
+              Place of their living: <strong>Paris, France </strong> <br><br>
+              Painting genres: <strong> Impressionism, Modern Art, Realism </strong> <br><br>
+              Famous Piece of works:
+              <ol>
+                <li> <strong>San Giorgio Maggiore at Dusk </strong> </li>
+                <li> <strong> Poplar Series </strong> </li>
+                <li><strong>Haystack Series </strong></li>
+                <li><strong> Impression, Sunrise </strong></li>
+                <li><strong> Rouen Cathedral series </strong></li>
+              </ol>
+          </p>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-6">
+          <img id="monet" src="https://www.thefamouspeople.com/profiles/images/claude-monet-3.jpg">
+      </div>
+  </div>
+
+  <div class="content container-fluid" id="vincent">
+      <div class="col-sm-3 col-md-6 col-lg-4">
+          <p> Date of Birth: <strong> March 30, 1853</strong><br><br>
+              Date of Death: <strong> July 29, 1890</strong> <br><br>
+              Place of their living: <strong>Paris, France</strong> <br><br>
+              Painting genres: <strong>Impressionism, Realism, Post-Impressionism </strong> <br><br>
+              <ol>
+                <li> <strong>Starry Night</strong> </li>
+                <li> <strong>	Self-portrait </strong> </li>
+                <li><strong> The Potato Eaters</strong></li>
+                <li><strong>Irises </strong></li>
+                <li><strong>Café Terrace at Night</strong></li>
+              </ol>
+          </p>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-6">
+          <img id="gogh" src="https://www.artble.com/imgs/3/2/c/55784/vincent_van_gogh.jpg">
+      </div>
+  </div>
+
+  <div class="content container-fluid" id="leonardo">
+      <div class="col-sm-3 col-md-6 col-lg-4">
+          <p> Date of Birth: <strong> April 15, 1452</strong><br><br>
+              Date of Death: <strong>May 2, 1519</strong> <br><br>
+              Place of their living: <strong>Milan, Italy</strong> <br><br>
+              Painting genres: <strong> Renaissance </strong> <br><br>
+              Famous piece of works:<ol>
+                <li> <strong> Mona Lisa  </strong> </li>
+                <li> <strong> The Last Supper </strong> </li>
+                <li><strong>St. John the Baptist </strong></li>
+                <li><strong>Female head </strong></li>
+                <li><strong>Head of Christ </strong></li>
+              </ol>
+          </p>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-6">
+          <img id="davinci" src="https://news.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg">
+      </div>
+  </div>
+
+  <div class="content container-fluid" id="michel">
+      <div class="col-sm-3 col-md-6 col-lg-4">
+          <p> Date of Birth: <strong>March 6, 1475</strong><br><br>
+              Date of Death: <strong>February  18, 1564</strong> <br><br>
+              Place of their living: <strong>Italy </strong> <br><br>
+              Painting genres: <strong> Renaissance </strong> <br><br>
+              <ol>
+                <li> <strong>	Sistine Chapel Ceiling </strong> </li>
+                <li> <strong>	The Last Judgement </strong> </li>
+                <li><strong> Battle of Cascina</strong></li>
+                <li><strong>Torment of Saint Anthony </strong></li>
+                <li><strong>The Entombment </strong></li>
+              </ol>
+          </p>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-6">
+          <img id="angelo" src="https://media1.britannica.com/eb-media/46/75046-004-E437D9A2.jpg">
+      </div>
+  </div>
+
+  <div class="content container-fluid" id="andy">
+      <div class="col-sm-3 col-md-6 col-lg-4">
+          <p> Date of Birth: <strong>Aug 6, 1928</strong><br><br>
+              Date of Death: <strong>Feb 22, 1987</strong> <br><br>
+              Place of their living: <strong>New York City, NY, USA </strong> <br><br>
+              Painting genres: <strong>Pop-art, Modern Art, Abstract Impressionism</strong> <br><br>
+            Famous piece of works:
+              <ol>
+                <li> <strong> Campbell’s Soup Can </strong> </li>
+                <li> <strong>Green Coca-Cola Bottles </strong> </li>
+                <li><strong> Mickey Mouse </strong></li>
+                <li><strong>Flowers Series </strong></li>
+                <li><strong>Eight Elvises </strong></li>
+              </ol>
+          </p>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-6">
+          <img id="warhol" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Andy_Warhol_1975.jpg">
+      </div>
+  </div>
+
   <!-- Footer section-->
   <footer class = "footer font">
       <!--<div class = "center"> -->
