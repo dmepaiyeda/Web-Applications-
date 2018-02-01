@@ -6,9 +6,7 @@ $(document).ready(function ()
         $("#CSC").click(function() {
                 $("div.content").hide();
                 $("#campbells").show();
-            }
-
-        );
+        });
         $("#SN").click(function() {
             $("div.content").hide();
             $("#starry").show();
@@ -24,6 +22,26 @@ $(document).ready(function ()
         $("#WW").click(function() {
             $("div.content").hide();
             $("#weeping").show();
+        });
+        $("#AW").click(function(){
+            $("div.content").hide();
+            $("#").show();
+        });
+        $("#AW").click(function(){
+            $("div.content").hide();
+            $("#").show();
+        });
+        $("#AW").click(function(){
+            $("div.content").hide();
+            $("#").show();
+        });
+        $("#AW").click(function(){
+            $("div.content").hide();
+            $("#").show();
+        });
+        $("#AW").click(function(){
+            $("div.content").hide();
+            $("#").show();
         });
 
 });
