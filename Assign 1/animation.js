@@ -1,6 +1,8 @@
 $(document).ready(function ()
 {
+    // hides all extra content on load of page
         $("div.content").hide();
+        // hides information that is being shown and shows the required content
         $("#CSC").click(function() {
                 $("div.content").hide();
                 $("#campbells").show();
