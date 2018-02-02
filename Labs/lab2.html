@@ -7,6 +7,7 @@
 
     <!--scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="lab2_animation.js"></script>
   </head>
 
   <body>
@@ -42,43 +43,55 @@
 
       <table border = "1">
           <tr>
-            <th> Select </th>
-            <th> Painting </th>
-            <th> Title </th>
-            <th> Artist </th>
-            <th> Year </th>
-            <th> Genre </th>
-            <th> Actions </th>
+              <th>Show Image</th>
+              <th>Hide Image</th>
+              <th>Show Info</th>
+              <th>Hide Info</th>
+              <th> Painting </th>
+              <th> Title </th>
+              <th> Artist </th>
+              <th> Year </th>
+              <th> Genre </th>
+              <th> Actions </th>
           </tr>
 
           <tr>
-            <td> <input name="group100" type = "radio" class="rbutton"></input> </td>
-            <td> <img  id="prodigal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg/1200px-Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg"></td>
-            <td id = "text">The Return of the Prodigal Son</td>
-            <td id = "text">Rembrandt van Rijn</td>
-            <td id = "text">1669</td>
-            <td id = "text">Baroque</td>
-            <td id = "text"><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
+              <td> <input name="group100" type = "radio" id="fin1" class="rbutton"></input> </td>
+              <td> <input name="group100" type = "radio" id="fout1" class="rbutton"></input> </td>
+              <td> <input name="group200" type = "radio" id="fin11" class="rbutton"></input> </td>
+              <td> <input name="group200" type = "radio" id="fout11" class="rbutton"></input> </td>
+              <td> <img  id="prodigal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg/1200px-Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg"></td>
+              <td><p class = "text1">The Return of the Prodigal Son</p></td>
+              <td><p class = "text1">Rembrandt van Rijn</p></td>
+              <td><p class = "text1">1669</p></td>
+              <td><p class = "text1">Baroque</p></td>
+              <td><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
           </tr>
 
           <tr>
-            <td> <input name="group100" type = "radio" class="rbutton"></input> </td>
-            <td> <img id="mona" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg">
-            <td id = "text">Mona Lisa</td>
-            <td id = "text">Leonardo da Vinci</td>
-            <td id = "text">1503</td>
-            <td id = "text">Renaissance</td>
-            <td id = "text"><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
+              <td> <input name="group101" type = "radio" id="fin2" class="rbutton"></input> </td>
+              <td> <input name="group101" type = "radio" id="fout2" class="rbutton"></input> </td>
+              <td> <input name="group201" type = "radio" id="fin12" class="rbutton"></input> </td>
+              <td> <input name="group201" type = "radio" id="fout12" class="rbutton"></input> </td>
+              <td> <img id="mona" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg">
+              <td><p class = "text2">Mona Lisa</p></td>
+              <td><p class = "text2">Leonardo da Vinci</p></td>
+              <td><p class = "text2">1503</p></td>
+              <td><p class = "text2">Renaissance</p></td>
+              <td><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
           </tr>
 
           <tr>
-            <td> <input name="group100" type = "radio" class="rbutton"></input> </td>
-            <td> <img id="bon" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Gustave_Courbet_-_Bonjour_Monsieur_Courbet_-_Mus%C3%A9e_Fabre.jpg">
-            <td id = "text">Bonjour, Monsieur Courbet</td>
-            <td id = "text">Gusatve Courbet</td>
-            <td id = "text">1854</td>
-            <td id = "text">Realism</td>
-            <td id = "text"><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
+              <td> <input name="group102" type = "radio" id="fin3" class="rbutton"></input> </td>
+              <td> <input name="group102" type = "radio" id="fout3" class="rbutton"></input> </td>
+              <td> <input name="group202" type = "radio" id="fin13" class="rbutton"></input> </td>
+              <td> <input name="group202" type = "radio" id="fout13" class="rbutton"></input> </td>
+              <td> <img id="bon" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Gustave_Courbet_-_Bonjour_Monsieur_Courbet_-_Mus%C3%A9e_Fabre.jpg">
+              <td><p class = "text3">Bonjour, Monsieur Courbet</p></td>
+              <td><p class = "text3">Gusatve Courbet</p></td>
+              <td><p class = "text3">1854</p></td>
+              <td><p class = "text3">Realism</p></td>
+              <td><button>Action 1</button><button>Action 2</button><br><button>Action 3</button><button>Action 4</button></td>
           </tr>
 
       </table>
