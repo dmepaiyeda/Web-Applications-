@@ -1,7 +1,9 @@
 $(document).ready(function()
 {
-    $("#textbox").animate({right: '0px', left: '250px'}, "slow");
-    $("#textbox").animate({right: '250px', left: '0px'}, "slow");
+    $("#title1").click(function(){
+        $("#textbox").animate({right: '0px', left: '250px'}, "slow");
+        $("#textbox").animate({right: '250px', left: '0px'}, "slow");
+    });
 
     $("#fin1").click(function () {
         $("#prodigal").fadeIn(2000);
