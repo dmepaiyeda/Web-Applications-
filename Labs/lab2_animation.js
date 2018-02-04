@@ -8,7 +8,6 @@ $(document).ready(function()
     $("#fin1").click(function () {
         $("#prodigal").fadeIn(2000);
     });
-
     $("#fout1").click(function () {
         $("#prodigal").fadeOut(2000);
     });
