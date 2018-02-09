@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="lab3.css" >
 </head>
 <body>
-    <form action="" method="post">
+    <form action="processartinfo.php" method="POST">
         <div class="col-sm-9 col-md-6 col-lg-5">
-            <label for="title">Title: </label><input type="text" id="title"><br>
-            <label for="description">Description: </label><input type="text" id="description"><br>
+            <label for="title">Title: </label><input type="text" name="title"><br>
+            <label for="description">Description: </label><input type="text" name="description"><br>
             <label for="genre">Choose Genre</label>
             <select name="Choose Genre" id="genre">
                 <option value = "0">Abstract</option>
@@ -26,7 +26,7 @@
             <label for="year">Year:</label><input type="text" id="year"><br>
             <label for="museum">Museum:</label><input type="text" id="museum">
         </div>
-        <div class="col-sm-3 col-md-6 col-lg-7">
+        <div class="col-sm-3 col-md-6 col-lg-7 center">
             <label>Type:</label>
                 <label>Sculpture</label><input name="group100" type="radio" id="sculpture" class="type">
                 <label>Painting</label><input name="group100" type="radio" id="painting" class="type"><br>
@@ -37,8 +37,8 @@
                 <input type="checkbox" name="CCS" id="Non-derivative Work"><label>Non-derivative Work</label><br>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12" id="bottom">
-            <button type="submit">Submit Query</button>
-            <button type="reset">Clear</button>
+            <button type="submit" class ="btn btn-primary">Submit Query</button>
+            <button type="reset" class ="btn btn-primary">Clear</button>
         </div>
     </form>
 </body>
