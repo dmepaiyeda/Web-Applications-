@@ -1,3 +1,10 @@
 body{
     background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A)
 }
+
+#bottom{
+    text-align: center;
+}
+label{
+    padding: 5px;
+}
