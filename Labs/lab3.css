@@ -1,13 +1,15 @@
 body{
-    background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A)
+    background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A);
 }
 
 #bottom{
     text-align: center;
 }
+
 label{
-    padding: 5px;
+    padding: 7px;
 }
+
 center{
   text-align: center;
 }
@@ -19,4 +21,31 @@ center{
 
 .btn-primary{
   background-color: #964B00;
+}
+
+input{
+    padding: 2px;
+    margin: 8px;
+}
+
+select{
+    padding: 3px;
+    margin: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 185px;
+}
+
+#firstLabel{
+    text-align: right;
+}
+#sculpture, #painting, #commercial,#Non-commercial, #Non-derivative, #Derivative {
+    margin-left: 45px;
+}
+
+label{
+    font-size: 18px;
+}
+.small{
+    font-size: 14px;
 }

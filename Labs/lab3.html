@@ -8,33 +8,39 @@
 </head>
 <body>
     <form action="processartinfo.php" method="POST">
-        <div class="col-sm-9 col-md-6 col-lg-5">
-            <label for="title">Title: </label><input type="text" name="title"><br>
-            <label for="description">Description: </label><input type="text" name="description"><br>
-            <label for="genre">Choose Genre</label>
+        <div class="col-sm-4 col-md-3 col-lg-2" id="firstLabel">
+            <label for="title">Title: </label><br>
+            <label for="description">Description: </label><br>
+            <label for="genre">Choose Genre</label><br>
+            <label for="subject">Choose Subject</label><br>
+            <label for="year">Year:</label><br>
+            <label for="museum">Museum:</label>
+        </div>
+        <div  class="col-sm-5 col-md-3 col-lg-3">
+            <input type="text" id="title"><br>
+            <input type="text" id="description"><br>
             <select name="Choose Genre" id="genre">
                 <option value = "0">Abstract</option>
                 <option value = "1">Baroque</option>
                 <option value = "2">Gothic</option>
                 <option value = "3">Renaissance</option>
             </select><br>
-            <label for="subject">Choose Subject</label>
             <select name="Choose Subject" id="subject">
                 <option value = "0">Portrait</option>
                 <option value = "1">Landscape</option>
             </select><br>
-            <label for="year">Year:</label><input type="text" id="year"><br>
-            <label for="museum">Museum:</label><input type="text" id="museum">
+            <input type="text" id="year"><br>
+            <input type="text" id="museum">
         </div>
-        <div class="col-sm-3 col-md-6 col-lg-7 center">
-            <label>Type:</label>
-                <label>Sculpture</label><input name="group100" type="radio" id="sculpture" class="type">
-                <label>Painting</label><input name="group100" type="radio" id="painting" class="type"><br>
+        <div class="col-sm-3 col-md-6 col-lg-7">
+            <label>Type:</label><br>
+                <input name="group100" type="radio" id="sculpture" class="type"><label class="small">Sculpture</label><br>
+                <input name="group100" type="radio" id="painting" class="type"><label class="small">Painting</label><br>
             <label>Creative Commons Specification:</label><br>
-                <input type="checkbox" name="CCS" id="commercial"><label>Commercial</label><br>
-                <input type="checkbox" name="CCS" id="Non-commercial"><label>Non-commercial</label><br>
-                <input type="checkbox" name="CCS" id="Derivative Work"><label>Derivative Work</label><br>
-                <input type="checkbox" name="CCS" id="Non-derivative Work"><label>Non-derivative Work</label><br>
+                <input type="checkbox" name="CCS" id="commercial"><label class="small" for="commercial">Commercial</label><br>
+                <input type="checkbox" name="CCS" id="Non-commercial"><label class="small" for="Non-commercial">Non-commercial</label><br>
+                <input type="checkbox" name="CCS" id="Derivative"><label class="small" for="Derivative">Derivative Work</label><br>
+                <input type="checkbox" name="CCS" id="Non-derivative"><label class="small" for="Non-derivative">Non-derivative Work</label><br>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12" id="bottom">
             <button type="submit" class ="btn btn-primary">Submit Query</button>
