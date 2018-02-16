@@ -5,44 +5,47 @@
     <title>Edit Art Work</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="lab3.css" >
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
 </head>
-<body>
-    <form action="processartinfo.php" method="POST">
-        <div class="col-sm-4 col-md-3 col-lg-2" id="firstLabel">
+<body class = "font">
+  <h1 style="font-family: 'Cinzel', serif;">  Edit Art Work </h1>
+    <form action="processartinfo.php" method="post">
+    <!--<div class="col-sm-4 col-md-3 col-lg-2" id="firstLabel">
             <label for="title">Title: </label><br>
             <label for="description">Description: </label><br>
             <label for="genre">Choose Genre</label><br>
             <label for="subject">Choose Subject</label><br>
             <label for="year">Year:</label><br>
             <label for="museum">Museum:</label>
+        </div>-->
+        <div  class="col-sm-4 ">
+		<label style="font-family: 'Cinzel', serif;">Title: </label> <input type="text" name ="title"><br>
+	       <label style="font-family: 'Cinzel', serif;"> Description: </label> <textarea type="text"  name ="description"> </textarea><br>
+		<label style="font-family: 'Cinzel', serif;"> Choose Genre:  </label> <select name="choosegenre" >
+		       <option value = "Abstract">Abstract</option>
+		       <option value = "Baroque">Baroque</option>
+		       <option value = "Gothic">Gothic</option>
+		       <option value = "Renaissance">Renaissance</option>
+		   </select><br>
+	   <label style="font-family: 'Cinzel', serif;">   Choose Subject:  </label><select name="choosesubject" >
+		       <option value = "Portrait">Portrait</option>
+		       <option value = "Landscape">Landscape</option>
+		   </select><br>
+	   <label style="font-family: 'Cinzel', serif;">   Year:  </label>    <input type="text" name="year"><br>
+	    <label style="font-family: 'Cinzel', serif;">    Museum:  </label>   <input type="text" name="museum">
         </div>
-        <div  class="col-sm-5 col-md-3 col-lg-3">
-            <input type="text" id="title"><br>
-            <input type="text" id="description"><br>
-            <select name="Choose Genre" id="genre">
-                <option value = "0">Abstract</option>
-                <option value = "1">Baroque</option>
-                <option value = "2">Gothic</option>
-                <option value = "3">Renaissance</option>
-            </select><br>
-            <select name="Choose Subject" id="subject">
-                <option value = "0">Portrait</option>
-                <option value = "1">Landscape</option>
-            </select><br>
-            <input type="text" id="year"><br>
-            <input type="text" id="museum">
+        <div style="font-family: 'Cinzel', serif;" class="col-sm-4 ">
+		   <label>Type</label><br>
+		       <input  type="radio" name="art" id = "sculpture" class="type" value="sculpture"><label class="small">Sculpture</label><br>
+		       <input type="radio" name="art" id="painting" class="type" value="painting"><label class="small">Painting</label><br>
+
+		   <label>Creative Commons Specification</label><br>
+		       <input type="checkbox" name="CCS" id="commercial" value="commercial"><label class="small" for="commercial">Commercial</label><br>
+		       <input type="checkbox" name="CCS" id="Non-commercial" value = "noncommercial"><label class="small" for="Non-commercial">Non-commercial</label><br>
+		       <input type="checkbox" name="CCS" id = "Derivative" value="derivative"><label class="small" for="Derivative">Derivative Work</label><br>
+		       <input type="checkbox" name="CCS" id = "Non-derivative" value="nonderivative"><label class="small" for="Non-derivative">Non-derivative Work</label><br>
         </div>
-        <div class="col-sm-3 col-md-6 col-lg-7">
-            <label>Type:</label><br>
-                <input name="group100" type="radio" id="sculpture" class="type"><label class="small">Sculpture</label><br>
-                <input name="group100" type="radio" id="painting" class="type"><label class="small">Painting</label><br>
-            <label>Creative Commons Specification:</label><br>
-                <input type="checkbox" name="CCS" id="commercial"><label class="small" for="commercial">Commercial</label><br>
-                <input type="checkbox" name="CCS" id="Non-commercial"><label class="small" for="Non-commercial">Non-commercial</label><br>
-                <input type="checkbox" name="CCS" id="Derivative"><label class="small" for="Derivative">Derivative Work</label><br>
-                <input type="checkbox" name="CCS" id="Non-derivative"><label class="small" for="Non-derivative">Non-derivative Work</label><br>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-12" id="bottom">
+        <div style="font-family: 'Cinzel', serif;" class="col-sm-12 col-md-12 col-lg-12" id="bottom">
             <button type="submit" class ="btn btn-primary">Submit Query</button>
             <button type="reset" class ="btn btn-primary">Clear</button>
         </div>

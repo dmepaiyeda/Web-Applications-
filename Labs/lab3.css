@@ -1,6 +1,9 @@
+
 body{
+	 font-family: 'Cinzel', serif;
     background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A);
 }
+
 
 #bottom{
     text-align: center;
@@ -26,6 +29,7 @@ center{
 input{
     padding: 2px;
     margin: 8px;
+
 }
 
 select{
@@ -48,4 +52,8 @@ label{
 }
 .small{
     font-size: 14px;
+}
+
+.header{
+	margin: 5px;
 }
