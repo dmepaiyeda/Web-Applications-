@@ -44,4 +44,8 @@ $(document).ready(function ()
             $("#andy").show();
         });
 
+    $("#AU").click(function() {
+        $("div.content").hide();
+        $("#home").show();
+    });
 });
