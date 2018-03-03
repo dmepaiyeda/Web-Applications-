@@ -44,8 +44,14 @@ $(document).ready(function ()
             $("#andy").show();
         });
 
-    $("#AU").click(function() {
-        $("div.content").hide();
-        $("#home").show();
-    });
+        $("#AU").click(function() {
+            $("div.content").hide();
+            $("#home").show();
+        });
+        $("#AG").click(function(){
+            $("div.content").hide();
+        })
+        $("#H").click(function(){
+            $("div.content").hide();
+        })
 });
