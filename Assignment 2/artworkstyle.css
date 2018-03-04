@@ -5,9 +5,14 @@
     margin-bottom: 25px;
 }
 
-p, .famousworks{
+p,.artistfont, .famousworks{
     font-family: 'Cinzel', serif;
     font-size: 16px;
+}
+
+.artistfont{
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
 }
 
 #monet,#gogh,#davinci, #warhol{
