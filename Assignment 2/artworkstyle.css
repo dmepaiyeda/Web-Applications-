@@ -19,8 +19,8 @@ p,.artistfont, .famousworks{
 #monet,#gogh,#davinci, #warhol,#angelo{
   width: 85%;
   height: 85%;
-  margin-left: 30px;;
-  margin-right: 0px;
+  margin-left: 0px;;
+  margin-right: 30px;
   border: 1rem solid;
   color: #3C3332;
 }
