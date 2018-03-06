@@ -29,3 +29,11 @@
 body{
     background: linear-gradient(to right, #EEE0CB, #F2C078, #4C230A) ;
 }
+
+p>a{
+    color: #EEE0CB;
+    text-decoration: underline #EEE0CB;
+}
+p>a:hover{
+    color: #FFFFFF;
+}
