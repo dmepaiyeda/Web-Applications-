@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="modal-animation.js"></script>
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="navbar.css">
@@ -27,20 +27,82 @@
                 <li><a href="Assign2.html">Home</a></li>
                 <li><a id="AU">About Us</a></li>
                 <li><a>Blogs</a></li>
-                <li><a ><img id="shopping" src="https://bromilow.com.au/sites/all/themes/chilli/images/icon-cart.png"></a></li>
+                <li><a ><img id="shopping" data-toggle="modal" data-target="#myModal" src="https://bromilow.com.au/sites/all/themes/chilli/images/icon-cart.png"></a></li>
             </ul>
         </div>
     </nav>
 </div>
-<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog-->
-<!--<button id = "shopping"> Shopping Cart</buttom>
-<!- The Modal -->
-<!--<div id="myModal" class="modal">
-  <!- Modal content -->
-<!--  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>some text ...</p>
-  </div>-->
+
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Shopping Cart</h4>
+        </div>
+        <div class="modal-body">
+          <!-- Image -->
+          <div class="col-sm-9 col-md-6 col-lg-6">
+              <img id="soup" src="http://1.bp.blogspot.com/-zekY4NLo1_c/UD_uVdNgEnI/AAAAAAAAAnA/rZuPJJ35Y4w/s1600/32+campbells.jpeg">  <br><br>
+          </div>
+          <div class="cart-font" style="padding-top:0px;">
+            <h3>Campbell Soup</h3>
+            <p><em style="padding-top:0px;"> Product#22</em></p>
+        </div>
+
+        <div>
+            <p class="cart-font cart-text-align">Quantity </p>
+            <div class="container">
+	             <div class="row">
+                <div class="col-lg-2">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="quantity-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                    </span>
+                    <input type="text" id="quantity" name="quantity" class="form-control input-number"  value="0" min="1" max="20">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-plus btn btn-success btn-number" data-type="plus" data-field="">
+                          <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                      </span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-font cart-text-align">
+              <h4> Order Summary </h4>
+                <div>
+                  <h6>Subtotal:</h6> <h6 class="pull-right"> </h6>
+                </div>
+                <div>
+                  <h6>Shipping:</h6>
+                  <h6 class="pull-right"></h6>
+
+                  <h6>Tax(HST):</h6>
+                  <h6 class="pull-right"></h6>
+                  <hr style="border-style: inset; border-width: 1px; background-color:black;">
+                  <h6>TOTAL:</h6>
+                  <h6 class="pull-right"> </h6>
+                </div>
+
+          </div>
+
+        </div>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
 
 
 <!-- Claude Monet -->
