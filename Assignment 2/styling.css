@@ -10,6 +10,16 @@
     font-family: 'Cinzel', serif;
 }
 
+.cart-font{
+    font-family: 'Cinzel', serif;
+    
+}
+
+.cart-text-align{
+  font-family: 'Cinzel', serif;
+  text-align: left;
+}
+
 .footer{
     position: fixed;
     right: 0;
