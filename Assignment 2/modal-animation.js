@@ -109,11 +109,17 @@ $('#plus1').click(function(e){
 
     $('#addto').click(function (e) {
         e.preventDefault();
-
-        var subtotal, taxes, shipping, total;
+        var subtotal, taxes, shipping, total, shippingPrice,check;
+        check = document.getElementById("express").checked;
+        if (check == true) {
+            shippingPrice = 0.20;
+        }
+        else{
+            shippingPrice = 0.10;
+        }
         subtotal = parseInt($('#quantity1').val())*200 + parseInt($('#quantity2').val())*140 + parseInt($('#quantity3').val())*120 + parseInt($('#quantity4').val())*300 + parseInt($('#quantity5').val())*250 ;
         taxes = subtotal*0.15;
-        shipping = subtotal*0.1;
+        shipping = subtotal*shippingPrice;
         total = subtotal + taxes + shipping;
 
         document.getElementById("sub").innerHTML = "Subtotal: $"+ subtotal;
