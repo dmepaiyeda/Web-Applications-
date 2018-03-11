@@ -77,3 +77,8 @@
     margin-left: 0px;
     padding-left:0px;
 }
+
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+    filter:none !important;
+}

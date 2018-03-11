@@ -43,7 +43,6 @@ $(document).ready(function ()
             $("div.content").hide();
             $("#andy").show();
         });
-
         $("#AU").click(function() {
             $("div.content").hide();
             $("#home").show();

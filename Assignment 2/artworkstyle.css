@@ -50,3 +50,10 @@ p,.artistfont, .famousworks{
     border: 1rem solid;
     color: #3C3332;
 }
+.item{
+    display: inline-block;
+}
+
+.quantity{
+    padding-bottom: 20px;
+}
