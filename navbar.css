@@ -1,0 +1,138 @@
+
+/*changes background of navigation bar*/
+.navbar.navbar-inverse{
+    background-color: #291F1E;
+    border-color: #291F1E;
+}
+
+/*changes colour of title of webpage*/
+.navbar.navbar-inverse .navbar-brand
+{
+    color: #EEE0CB;
+}
+
+.navbar.navbar-inverse .navbar-brand:hover,
+.navbar.navbar-inverse .navbar-brand:focus{
+    background-color: #3C3332;
+    color: #EEE0CB;
+}
+
+/*changes colour of list item that mouse is over*/
+.navbar.navbar-inverse .navbar-nav > li > a:hover,
+.navbar.navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #3C3332;
+    color: #EEE0CB;
+}
+
+/*changes colour of selected item*/
+.navbar.navbar-inverse .navbar-nav > .active,
+.navbar.navbar-inverse .navbar-nav > .active > a,
+.navbar.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #EEE0CB;
+    background-color: #3C3332;
+}
+
+.navbar.navbar-inverse li a{
+    color: #EEE0CB;
+}
+
+/* changes features dropdown*/
+.dropdown-menu{
+    background-color: #3C3332;
+    color: #EEE0CB;
+    border-color: #3C3332;
+}
+
+/* changes features of element mouse is over*/
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu > .active > a:hover {
+    background-color: #291F1E;
+    color:#EEE0CB;
+    border-color: #3C3332;
+}
+
+/* changes text colour of dropdown*/
+.dropdown-menu > li > a {
+    color: #EEE0CB;
+}
+
+.btn-dropdown-toggle,
+.btn-dropdown-toggle:focus{
+    background-color: #3C3332;
+    color: #EEE0CB;
+    margin-left: 10px;
+}
+.btn-dropdown-toggle:hover{
+    background-color: #291F1E;
+    color: #EEE0CB;
+}
+.dropdown{
+    display: inline-block;
+}
+
+#shopping{
+    width: 20px;
+    margin-left: 0px;
+    padding-left:0px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
