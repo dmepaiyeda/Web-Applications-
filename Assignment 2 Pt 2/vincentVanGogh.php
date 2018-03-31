@@ -25,7 +25,7 @@
                 <a class="navbar-brand" id="AG">Art Gallery</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="Assign2.html">Home</a></li>
+                <li><a href="assign2main.php">Home</a></li>
                 <li><a ><img id="shopping" data-toggle="modal" data-target="#myModal" src="https://bromilow.com.au/sites/all/themes/chilli/images/icon-cart.png"></a></li>
             </ul>
         </div>
