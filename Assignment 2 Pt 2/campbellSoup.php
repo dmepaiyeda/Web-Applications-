@@ -250,22 +250,87 @@
 
 <!-- Campbell's Soup Can -->
 <div class="content container-fluid font" id="campbells">
-    <h1>Campbell's Soup Can</h1>
-    <h3>Andy Warhol</h3>
-    <!-- Image -->
-    <div class="col-sm-9 col-md-6 col-lg-6">
-        <img id="soup" src="http://1.bp.blogspot.com/-zekY4NLo1_c/UD_uVdNgEnI/AAAAAAAAAnA/rZuPJJ35Y4w/s1600/32+campbells.jpeg">  <br><br>
-    </div>
-    <!-- Information -->
-    <div class="col-sm-3 col-md-6 col-lg-4">
-        <p>Date of Production: <strong>1962</strong><br><br>
-            Type of Painting Colors: <strong>Synthetic Polymer Paint</strong> <br><br>
-            Dimensions of Painting: <strong>51 cm x 41 cm</strong> <br><br>
-            Location of Painting: <strong>Museum of Modern Art</strong> <br><br>
-            Price: <strong>N/A</strong> <br><br>
-            Genres: <strong>Pop Art</strong>
-        </p>
-    </div>
+    <?php   $servername = "localhost";
+            $username = "smaccall";
+            $password = "pygleif0";
+            $dbname = "smaccall";
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            
+            $sql = "SELECT firstname, lastname, piece FROM Artwork WHERE id='1'";
+            $result = $conn->query($sql);
+            if (mysqli_num_rows($result) > 0) 
+            {
+            // output data of each row
+            
+                while($row = mysqli_fetch_assoc($result))
+                {
+                    echo "<h1>". $row["piece"]. "</h1><h3>". $row["firstname"]. " ". $row["lastname"]. "</h3>";
+                }
+            }
+            else 
+            {
+                echo "0 results";
+            }
+
+        //Image 
+        echo "<div class='col-sm-9 col-md-6 col-lg-6'>";
+            $sql = "SELECT url FROM Images WHERE id='1'";
+            $result = $conn->query($sql);
+            if (mysqli_num_rows($result) > 0) 
+            {
+            // output data of each row
+                while($row = mysqli_fetch_assoc($result))
+                {
+                    echo "<img id='soup' src='". $row["url"]."'>  <br><br>";
+                }
+            }
+            else 
+            {
+                echo "0 results";
+            }
+        echo "</div>";
+        // Information
+        echo "<div class='col-sm-3 col-md-6 col-lg-4'>";
+            echo"<p>";
+                        $sql = "SELECT year, type, dimension, price, location FROM Artwork WHERE id='1'";
+                        $result = $conn->query($sql);
+                        if (mysqli_num_rows($result) > 0) {
+                        // output data of each row
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo "Date of Production: ". $row["year"]. "<br><br> Type of Painting Colors: ". $row["type"]. "<br><br> Dimension: ". $row["dimension"]. "<br><br> Location: ". $row["location"]. "<br><br>";
+                                if ($row["price"] == NULL)
+                                {
+                                    echo "Price: N/A <br><br>";
+                                }
+                                else{
+                                    echo "Price: ". $row["price"]. "<br><br>";
+                                }
+                            }
+                        } 
+                            else {
+                                echo "0 results";
+                            }   
+
+                        $sql = "SELECT genre FROM Genre WHERE id='1'";
+                        $result = $conn->query($sql);
+                        if (mysqli_num_rows($result) > 0) {
+                        // output data of each row
+                        echo "Genres: ";
+                        while($row = mysqli_fetch_assoc($result)) {
+                            echo $row["genre"] ."<br><br>";
+                        }
+                        }
+                         else {
+                        echo "0 results";
+                        }
+                        $conn = null;
+                        
+                
+            echo"</p>";
+        echo"</div>";
+    ?>
 </div>
 </div>
 </body>
