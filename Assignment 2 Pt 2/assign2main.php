@@ -286,11 +286,11 @@
 <div class="dropdown font">
     <button class="btn btn-dropdown-toggle" type="button" data-toggle="dropdown">Museums</button>
     <ul class="dropdown-menu">
-        <li><a id="">Museum of Modern Art</a></li>
-        <li><a id="">Tate Modern</a></li>
-        <li><a id="">Uffizi Gallery</a></li>
-        <li><a id="">Art Gallery of Ontario</a></li>
-        <li><a id="">Musée des Beaux-Arts de Bordeaux</a></li>
+        <li><a id="MOMA">Museum of Modern Art</a></li>
+        <li><a id="TATE">Tate Modern</a></li>
+        <li><a id="UFFIZI">Uffizi Gallery</a></li>
+        <li><a id="AGO">Art Gallery of Ontario</a></li>
+        <li><a id="MUSEE">Musée des Beaux-Arts de Bordeaux</a></li>
     </ul>
 </div>
 
@@ -473,6 +473,93 @@
             Date of Birth: <strong>Aug 6, 1928</strong><br><br>
             Date of Death: <strong>Feb 22, 1987</strong> <br><br>
             Place of their living: <strong>New York City, NY, USA </strong> <br><br>
+        </p>
+    </div>
+</div>
+
+<!-- Museums Section -->
+
+<!--Museum of Modern Art -->
+<div class="content container-fluid" id="mma">
+  <!-- Image -->
+  <div class="col-sm-2 col-md-2 col-lg-2 Mofart">
+      <img id="museumart" src="https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg">
+      <br>
+  </div>
+    <!-- Information -->
+    <div class="col-sm-3 col-md-3 col-lg-3 Mofart">
+        <p class = "artistfont">
+            <a href="museumofart.php">Museum of Modern Art</a><br>
+           Location: <strong>United States</strong><br><br>
+          Address: <strong>11 West 53 Street, Manhattan</strong> <br><br>
+        </p>
+    </div>
+</div>
+
+<!-- Tate Modern-->
+<div class="content container-fluid" id="tate">
+<!--Image-->
+<div class="col-sm-2 col-md-2 col-lg-2 Tate">
+      <img id="tatemodern" src="http://www.vigoenfotos.com/londres/imagenes/london/tate_modern_museum/g_vigoenfotos_6453m.jpg">
+      <br>
+  </div>
+
+ <!-- Information-->
+ <div class="col-sm-3 col-md-3 col-lg-3 Tate">
+        <p class = "artistfont"><a href="tatemuseum.php">Tate Modern</a><br>
+            Location: <strong>United Kingdom</strong><br><br>
+            Address: <strong>Bankside; London, SE1</strong> <br><br>
+        </p>
+    </div>
+</div>
+
+<!--Uffizi Gallery-->
+<div class="content container-fluid" id="uffizi">
+<!--Image-->
+<div class="col-sm-2 col-md-2 col-lg-2 Uffizi">
+      <img id="uffizigal" src="https://nationalpostcom.files.wordpress.com/2016/07/travel_trip_essentials_florence_47275094.jpg">
+      <br>
+  </div>
+ <!-- Information-->
+ <div class="col-sm-3 col-md-3 col-lg-3 Uffizi">
+        <p class = "artistfont">
+            <a href="uffizigal.php"> Uffizi Gallery</a><br>
+            Location: <strong>Italy</strong><br><br>
+            Address: <strong>Piazzale degli Uffizi, 6, 50122 Firenze FI</strong> <br><br>
+        </p>
+    </div>
+</div>
+
+<!--Art Gallery of Ontario-->
+<div class="content container-fluid" id="ago">
+<!--Image-->
+<div class="col-sm-2 col-md-2 col-lg-2 AGO">
+      <img id="ontario" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/AGO_at_dusk.jpg/1200px-AGO_at_dusk.jpg">
+      <br>
+  </div>
+ <!-- Information-->
+ <div class="col-sm-3 col-md-3 col-lg-3 AGO">
+        <p class = "artistfont">
+            <a href="ago.php">Art Gallery of Ontario </a><br>
+            Location: <strong>Canada</strong><br><br>
+            Address: <strong> 317 Dundas St W, Toronto, ON M5T 1G4</strong> <br><br>
+        </p>
+    </div>
+</div>
+
+<!-- Musee Des Beaux-Arts De Bordeaux-->
+<div class="content container-fluid" id="musee">
+<!--Image-->
+<div class="col-sm-2 col-md-2 col-lg-2 Musee">
+      <img id="museemuseum" src="http://actualites-pro-museumexperts.com/wp-content/uploads/2013/12/Absolute-barrieres-.jpg">
+      <br>
+  </div>
+ <!-- Information-->
+ <div class="col-sm-3 col-md-3 col-lg-3 Musee">
+        <p class = "artistfont">
+            <a href="museemuseum.php">Musee Des Beaux-Arts De Bordeaux</a><br>
+            Location: <strong>France</strong><br><br>
+            Address: <strong>20 Cours d'Albret, 33000 Bordeaux</strong> <br><br>
         </p>
     </div>
 </div>

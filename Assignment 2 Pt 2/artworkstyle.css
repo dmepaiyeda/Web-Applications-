@@ -16,7 +16,7 @@ p,.artistfont, .famousworks{
 }
 
 /*styling for artist images */
-#monet,#gogh,#davinci, #warhol,#angelo{
+#monet,#gogh,#davinci,#warhol,#angelo{
   width: 85%;
   height: 85%;
   margin-left: 0px;;
@@ -33,6 +33,23 @@ p,.artistfont, .famousworks{
   color: #EEE0CB;
 }
 
+/*styling for museum images */
+#museumart,#tatemodern,#uffizigal,#ontario,#museemuseum{
+  width: 85%;
+  height: 85%;
+  margin-left: 0px;;
+  margin-right: 30px;
+  border: 1rem solid;
+  color: #3C3332;
+}
+
+/*styling for museum images information */
+.Mofart,.Tate,.Uffizi,.AGO,.Musee{
+  margin-top: 15px;
+  float: right;
+  text-align: right;
+  color: #EEE0CB;
+}
 /*styling for artwork images information */
 .StarryNight, .CampbellsSoup, .BirthoVenus, .LastSupper, .WeepingWoman{
     margin-top: 15px;

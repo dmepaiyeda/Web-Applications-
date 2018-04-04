@@ -53,7 +53,25 @@ $(document).ready(function ()
     $("#H").click(function(){
         $("div.content").hide();
     });
-
-
+    $("#MOMA").click(function(){
+        $("div.content").hide();
+         $("#mma").show();
+    });
+     $("#TATE").click(function(){
+        $("div.content").hide();
+         $("#tate").show();
+    });
+     $("#UFFIZI").click(function(){
+        $("div.content").hide();
+         $("#uffizi").show();
+    });
+     $("#AGO").click(function(){
+        $("div.content").hide();
+         $("#ago").show();
+    });
+     $("#MUSEE").click(function(){
+        $("div.content").hide();
+         $("#musee").show();
+       });
 
 });
