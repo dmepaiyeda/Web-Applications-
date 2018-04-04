@@ -73,5 +73,9 @@ $(document).ready(function ()
         $("div.content").hide();
          $("#musee").show();
        });
+    $("#SEARCHIT").click(function(){
+      $("div.content").hide();
+       $("#searchform").show();
+    });
 
 });

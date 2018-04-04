@@ -12,7 +12,19 @@
 
 .cart-font{
     font-family: 'Cinzel', serif;
-    
+
+}
+.searchbox{
+  text-align: right;
+
+}
+#searchform{
+    text-align: right;
+    padding:10px;
+}
+.searchbutton{
+  text-align: right;
+
 }
 
 .cart-text-align{
