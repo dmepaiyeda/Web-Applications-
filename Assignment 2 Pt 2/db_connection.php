@@ -40,7 +40,7 @@ try {
          dimension VARCHAR(50),
          year INT(1),
          price INT(10),
-         genre VARCHAR(30)
+         genre VARCHAR(30),
          PRIMARY KEY (`id`)
      )";
 
