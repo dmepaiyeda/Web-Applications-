@@ -29,6 +29,21 @@ try {
         genra VARCHAR(30)
     )";
 
+    $sql = "CREATE TABLE SEARCH_ENGINE (
+         `id` INT(6) NOT NULL AUTO_INCREMENT,
+         `pageurl` VARCHAR(255) NOT NULL,
+         `pagecontent` TEXT NOT NULL,
+         piece VARCHAR(30) NOT NULL,
+         firstname VARCHAR(30) NOT NULL,
+         lastname VARCHAR(30) NOT NULL,
+         type VARCHAR(50),
+         dimension VARCHAR(50),
+         year INT(1),
+         price INT(10),
+         genre VARCHAR(30)
+         PRIMARY KEY (`id`)
+     )";
+
     // use exec() because no results are returned
     $conn->exec($sql);
     echo "Table Artwork created successfully <br>";

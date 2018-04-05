@@ -30,8 +30,17 @@
                 <li><a id="H">Home</a></li>
                 <li><a id="AU">About Us</a></li>
                 <li><a>Blogs</a></li>
-                <li><a ><img id="shopping" data-toggle="modal" data-target="#myModal" src="https://bromilow.com.au/sites/all/themes/chilli/images/icon-cart.png"></a></li>
+                <li> <a id="SEARCHIT"> Search </a></li>
+                <li><a><img id="shopping" data-toggle="modal" data-target="#myModal" src="https://bromilow.com.au/sites/all/themes/chilli/images/icon-cart.png"></a></li>
             </ul>
+            <!--Search Dialogue Box-->
+            <div class="content" id = "searchform" >
+              <form action = 'search.php' method ='GET'>
+                     <input type = 'text' size='40' name = 'search' class="searchbox" placeholder="Search artworks..." >
+                     <button class="btn btn-dropdown-toggle" type = 'button' name = 'submit' value = 'Search' class="searchbutton">Search</button>
+               </form>
+            </div>
+
         </div>
     </nav>
 </div>
