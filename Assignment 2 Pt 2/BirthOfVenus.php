@@ -356,7 +356,7 @@
             // Create connection
             $conn = new mysqli($servername, $username, $password, $dbname);
 
-            $sql = "SELECT firstname, lastname, piece FROM Artwork WHERE id='3'";
+            $sql = "SELECT firstname, lastname, piece FROM Artwork WHERE idArtwork='3'";
             $result = $conn->query($sql);
             if (mysqli_num_rows($result) > 0)
             {
@@ -392,7 +392,7 @@
         // Information
         echo "<div class='col-sm-3 col-md-6 col-lg-4'>";
             echo"<p>";
-                        $sql = "SELECT year, type, dimension, price, location FROM Artwork WHERE id='3'";
+                        $sql = "SELECT year, type, dimension, price, location FROM Artwork WHERE idArtwork='3'";
                         $result = $conn->query($sql);
                         if (mysqli_num_rows($result) > 0) {
                         // output data of each row

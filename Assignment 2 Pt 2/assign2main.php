@@ -30,6 +30,7 @@
                 <li><a id='H'>Home</a></li>
                 <li><a id='AU'>About Us</a></li>
                 <li><a>Blogs</a></li>
+                <li><a href='maintain.php'>Maintain</a></li>
                 <li><a ><img id='shopping' data-toggle='modal' data-target='#myModal' src='https://bromilow.com.au/sites/all/themes/chilli/images/icon-cart.png'></a></li>
             </ul>
         </div>
@@ -64,16 +65,16 @@
                                         $conn = new mysqli($servername, $username, $password, $dbname);
                                         $sql = "SELECT * FROM ShoppingCart WHERE scArtwork ='Campbells Soup Can'";
                                         $result = $conn->query($sql);
-                                        if (mysqli_num_rows($result) > 0) 
+                                        if (mysqli_num_rows($result) > 0)
                                         {
                                         // output data of each row
-                                        
+
                                             while($row = mysqli_fetch_assoc($result))
                                             {
                                                 echo "<h3>". $row['scArtwork'] ."</h3><p><em style='padding-top:0px;'> Product#22</em></p><h4>Price: $". $row['scPrice']. "</h4>";
                                             }
                                         }
-                                        else 
+                                        else
                                         {
                                             echo "0 results";
                                         }
@@ -118,16 +119,16 @@
                                         $conn = new mysqli($servername, $username, $password, $dbname);
                                         $sql = "SELECT * FROM ShoppingCart WHERE scArtwork ='The Weeping Woman'";
                                         $result = $conn->query($sql);
-                                        if (mysqli_num_rows($result) > 0) 
+                                        if (mysqli_num_rows($result) > 0)
                                         {
                                         // output data of each row
-                                        
+
                                             while($row = mysqli_fetch_assoc($result))
                                             {
                                                 echo "<h3>". $row['scArtwork'] ."</h3><p><em style='padding-top:0px;'> Product#24</em></p><h4>Price: $". $row['scPrice']. "</h4>";
                                             }
                                         }
-                                        else 
+                                        else
                                         {
                                             echo "0 results";
                                         }
@@ -173,16 +174,16 @@
                                         $conn = new mysqli($servername, $username, $password, $dbname);
                                         $sql = "SELECT * FROM ShoppingCart WHERE scArtwork ='Starry Night'";
                                         $result = $conn->query($sql);
-                                        if (mysqli_num_rows($result) > 0) 
+                                        if (mysqli_num_rows($result) > 0)
                                         {
                                         // output data of each row
-                                        
+
                                             while($row = mysqli_fetch_assoc($result))
                                             {
                                                 echo "<h3>". $row['scArtwork'] ."</h3><p><em style='padding-top:0px;'> Product#21</em></p><h4>Price: $". $row['scPrice']. "</h4>";
                                             }
                                         }
-                                        else 
+                                        else
                                         {
                                             echo "0 results";
                                         }
@@ -227,16 +228,16 @@
                                         $conn = new mysqli($servername, $username, $password, $dbname);
                                         $sql = "SELECT * FROM ShoppingCart WHERE scArtwork ='The Last Supper'";
                                         $result = $conn->query($sql);
-                                        if (mysqli_num_rows($result) > 0) 
+                                        if (mysqli_num_rows($result) > 0)
                                         {
                                         // output data of each row
-                                        
+
                                             while($row = mysqli_fetch_assoc($result))
                                             {
                                                 echo "<h3>". $row['scArtwork'] ."</h3><p><em style='padding-top:0px;'> Product#23</em></p><h4>Price: $". $row['scPrice']. "</h4>";
                                             }
                                         }
-                                        else 
+                                        else
                                         {
                                             echo "0 results";
                                         }
@@ -281,16 +282,16 @@
                                         $conn = new mysqli($servername, $username, $password, $dbname);
                                         $sql = "SELECT * FROM ShoppingCart WHERE scArtwork ='The Birth of Venus'";
                                         $result = $conn->query($sql);
-                                        if (mysqli_num_rows($result) > 0) 
+                                        if (mysqli_num_rows($result) > 0)
                                         {
                                         // output data of each row
-                                        
+
                                             while($row = mysqli_fetch_assoc($result))
                                             {
                                                 echo "<h3>". $row['scArtwork'] ."</h3><p><em style='padding-top:0px;'> Product#25</em></p><h4>Price: $". $row['scPrice']. "</h4>";
                                             }
                                         }
-                                        else 
+                                        else
                                         {
                                             echo "0 results";
                                         }
@@ -420,7 +421,7 @@ echo "</div>";
 
 //<!-- Campbell's Soup Can -->
 
-    
+
     // Create connection
 
     echo "<div class='content' id='campbells'>";
@@ -428,7 +429,7 @@ echo "</div>";
         echo "<div class='col-sm-2 col-md-2 col-lg-2 CampbellsSoup'>";
         $sql = "SELECT url FROM Images WHERE id='1'";
         $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
+        if (mysqli_num_rows($result) > 0)
         {
         // output data of each row
             while($row = mysqli_fetch_assoc($result))
@@ -436,7 +437,7 @@ echo "</div>";
                 echo "<img id='soup' src='". $row["url"]."'>  <br><br>";
             }
         }
-        else 
+        else
         {
             echo "0 results";
         }
@@ -444,14 +445,16 @@ echo "</div>";
     //<!-- Information -->
     echo "<div class='col-sm-3 col-md-3 col-lg-3 CampbellsSoup'>";
         echo "<p>";
-        $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE id='1'";
-        $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
-        {
-        // output data of each row
-            while($row = mysqli_fetch_assoc($result))
+
+        $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE idArtwork='1'";
+            $result = $conn->query($sql);
+            if (mysqli_num_rows($result) > 0)
             {
-                echo "<a href='campbellSoup.php'>". $row["piece"]. "</a> <br>". $row["firstname"]." ". $row["lastname"]. "<br>";
+            // output data of each row
+
+                while($row = mysqli_fetch_assoc($result))
+                {
+                    echo "<a href='campbellSoup.php'>". $row["piece"]. "</a> <br>". $row["firstname"]." ". $row["lastname"]. "<br>";
                 if ($row["price"] == NULL)
                 {
                     echo "Price: N/A";
@@ -460,13 +463,13 @@ echo "</div>";
                 {
                     echo "Price: ". $row["price"];
                 }
+                }
             }
-        }
-        else 
-        {
-            echo "0 results";
-        }
-              
+            else
+            {
+                echo "0 Results";
+            }
+
         echo "</p>";
     echo "</div>";
 echo "</div>";
@@ -477,7 +480,7 @@ echo "<div class='content' id='starry'>";
     echo"<div class='col-sm-2 col-md-2 col-lg-2 StarryNight'>";
         $sql = "SELECT url FROM Images WHERE id='2'";
         $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
+        if (mysqli_num_rows($result) > 0)
         {
         // output data of each row
             while($row = mysqli_fetch_assoc($result))
@@ -485,7 +488,7 @@ echo "<div class='content' id='starry'>";
                 echo "<img id='soup' src='". $row["url"]."'>  <br><br>";
             }
         }
-        else 
+        else
         {
             echo "0 results";
         }
@@ -494,9 +497,9 @@ echo "<div class='content' id='starry'>";
     echo "<div class='col-sm-3 col-md-3 col-lg-3 StarryNight'>";
         echo "<p>";
 
-            $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE id='2'";
+            $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE idArtwork='2'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
                 while($row = mysqli_fetch_assoc($result))
@@ -512,7 +515,7 @@ echo "<div class='content' id='starry'>";
                     }
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -526,7 +529,7 @@ echo "<div class='content' id='venus'>";
     echo "<div class='col-sm-2 col-md-2 col-lg-2 BirthoVenus'>";
         $sql = "SELECT url FROM Images WHERE id='3'";
         $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
+        if (mysqli_num_rows($result) > 0)
         {
         // output data of each row
             while($row = mysqli_fetch_assoc($result))
@@ -534,7 +537,7 @@ echo "<div class='content' id='venus'>";
                 echo "<img id='bvenus' src='". $row["url"]."'>  <br><br>";
             }
         }
-        else 
+        else
         {
             echo "0 results";
         }
@@ -542,9 +545,9 @@ echo "<div class='content' id='venus'>";
     // Information -->
     echo "<div class='col-sm-3 col-md-3 col-lg-3 BirthoVenus'>";
         echo "<p>";
-            $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE id='3'";
+            $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE idArtwork='3'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
                 while($row = mysqli_fetch_assoc($result))
@@ -560,7 +563,7 @@ echo "<div class='content' id='venus'>";
                     }
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -574,7 +577,7 @@ echo "<div class='content container-fluid' id='supper'>";
     echo "<div class='col-sm-2 col-md-2 col-lg-2 LastSupper'>";
         $sql = "SELECT url FROM Images WHERE id='4'";
         $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
+        if (mysqli_num_rows($result) > 0)
         {
         // output data of each row
             while($row = mysqli_fetch_assoc($result))
@@ -582,7 +585,7 @@ echo "<div class='content container-fluid' id='supper'>";
                 echo "<img id='lasts' src='". $row["url"]."'>  <br><br>";
             }
         }
-        else 
+        else
         {
             echo "0 results";
         }
@@ -590,9 +593,9 @@ echo "<div class='content container-fluid' id='supper'>";
     // Information -->
     echo "<div class='col-sm-3 col-md-3 col-lg-3 LastSupper'>";
         echo "<p>";
-            $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE id='4'";
+            $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE idArtwork='4'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
                 while($row = mysqli_fetch_assoc($result))
@@ -608,7 +611,7 @@ echo "<div class='content container-fluid' id='supper'>";
                     }
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -622,7 +625,7 @@ echo "<div class='content container-fluid' id='weeping'>";
     echo "<div class='col-sm-2 col-md-2 col-lg-2 WeepingWoman'>";
         $sql = "SELECT url FROM Images WHERE id='5'";
         $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
+        if (mysqli_num_rows($result) > 0)
         {
         // output data of each row
             while($row = mysqli_fetch_assoc($result))
@@ -630,7 +633,7 @@ echo "<div class='content container-fluid' id='weeping'>";
                 echo "<img id='wwoman' src='". $row["url"]."'>  <br><br>";
             }
         }
-        else 
+        else
         {
             echo "0 results";
         }
@@ -638,9 +641,9 @@ echo "<div class='content container-fluid' id='weeping'>";
     // Information -->
     echo "<div class='col-sm-3 col-md-3 col-lg-3 WeepingWoman'>";
         echo "<p>";
-            $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE id='5'";
+            $sql = "SELECT piece, firstname, lastname, price FROM Artwork WHERE idArtwork='5'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
                 while($row = mysqli_fetch_assoc($result))
@@ -656,7 +659,7 @@ echo "<div class='content container-fluid' id='weeping'>";
                     }
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -671,16 +674,16 @@ echo "<div class='content container-fluid' id='claude'>";
     echo "<div class='col-sm-2 col-md-2 col-lg-2 Monet'>";
         $sql = "SELECT url FROM Images WHERE id='7'";
         $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
+        if (mysqli_num_rows($result) > 0)
         {
         // output data of each row
-        
+
             while($row = mysqli_fetch_assoc($result))
             {
                 echo "<img id='monet' src='". $row['url']."'><br><br>";
             }
         }
-        else 
+        else
         {
             echo "0 results";
         }
@@ -690,12 +693,12 @@ echo "<div class='content container-fluid' id='claude'>";
     // Information -->
     echo "<div class='col-sm-3 col-md-3 col-lg-3 Monet'>";
         echo "<p class = 'artistfont'>";
-        $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE id='7'";
+        $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE idArtist='7'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<a href='claudeMonet.php'>". $row['aFirstName']." ". $row['aLastname'] ."</a><br>
@@ -704,7 +707,7 @@ echo "<div class='content container-fluid' id='claude'>";
             Place of their living: ". $row['pol']. "<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -719,16 +722,16 @@ echo "<div class='content container-fluid' id='vincent'>";
     echo "<div class='col-sm-2 col-md-2 col-lg-2 VanGogh'>";
         $sql = "SELECT url FROM Images WHERE id='10'";
         $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
+        if (mysqli_num_rows($result) > 0)
         {
         // output data of each row
-            
+
             while($row = mysqli_fetch_assoc($result))
             {
                 echo "<img id='gogh' src='". $row['url']."'><br><br>";
             }
         }
-        else 
+        else
         {
             echo "0 results";
         }
@@ -737,12 +740,12 @@ echo "<div class='content container-fluid' id='vincent'>";
     // Information -->
     echo "<div class='col-sm-3 col-md-3 col-lg-3 VanGogh'>";
         echo "<p class = 'artistfont'>";
-            $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE id='10'";
+            $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE idArtist='10'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<a href='vincentVanGogh.php'>". $row['aFirstName']." ". $row['aLastname'] ."</a><br>
@@ -751,7 +754,7 @@ echo "<div class='content container-fluid' id='vincent'>";
             Place of their living: ". $row['pol']. "<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -764,16 +767,16 @@ echo "<div class='content container-fluid' id='leonardo'>";
     echo "<div class='col-sm-2 col-md-2 col-lg-2 daVinci'>";
         $sql = "SELECT url FROM Images WHERE id='8'";
         $result = $conn->query($sql);
-        if (mysqli_num_rows($result) > 0) 
+        if (mysqli_num_rows($result) > 0)
         {
         // output data of each row
-        
+
             while($row = mysqli_fetch_assoc($result))
             {
                 echo "<img id='davinci' src='". $row['url']."'><br><br>";
             }
         }
-        else 
+        else
         {
             echo "0 results";
         }
@@ -782,12 +785,12 @@ echo "<div class='content container-fluid' id='leonardo'>";
     // Information -->
    echo "<div class='col-sm-3 col-md-3 col-lg-3 daVinci'>";
         echo "<p class = 'artistfont'>";
-           $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE id='8'";
+           $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE idArtist='8'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<a href='leonardo.php'>". $row['aFirstName']." ". $row['aLastname'] ."</a><br>
@@ -796,7 +799,7 @@ echo "<div class='content container-fluid' id='leonardo'>";
             Place of their living: ". $row['pol']. "<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -810,16 +813,16 @@ echo "<div class='content container-fluid' id='michel'>";
   echo "<div class='col-sm-2 col-md-2 col-lg-2 Michel'>";
    $sql = "SELECT url FROM Images WHERE id='9'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<img id='angelo' src='". $row['url']."'><br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -829,12 +832,12 @@ echo "<div class='content container-fluid' id='michel'>";
     // Information -->
     echo "<div class='col-sm-3 col-md-3 col-lg-3 Michel'>";
         echo "<p class = 'artistfont'>";
-        $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE id='9'";
+        $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE idArtist='9'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<a href='michelangelo.php'>". $row['aFirstName']." ". $row['aLastname'] ."</a><br>
@@ -843,7 +846,7 @@ echo "<div class='content container-fluid' id='michel'>";
             Place of their living: ". $row['pol']. "<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -857,16 +860,16 @@ echo "<div class='content container-fluid' id='andy'>";
   echo "<div class='col-sm-2 col-md-2 col-lg-2 Andy'>";
       $sql = "SELECT url FROM Images WHERE id='6'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<img id='warhol' src='". $row['url']."'><br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -877,12 +880,12 @@ echo "<div class='content container-fluid' id='andy'>";
     echo "<div class='col-sm-3 col-md-3 col-lg-3 Andy'>";
         echo "<p class = 'artistfont'>";
 
-        $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE id='6'";
+        $sql = "SELECT aFirstName, aLastname, dyear, byear, pol FROM Artist WHERE idArtist='6'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<a href='andyWarhol.php'>". $row['aFirstName']." ". $row['aLastname'] ."</a><br>
@@ -891,7 +894,7 @@ echo "<div class='content container-fluid' id='andy'>";
             Place of their living: ". $row['pol']. "<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -908,16 +911,16 @@ echo "<div class='content container-fluid' id='mma'>";
   echo "<div class='col-sm-2 col-md-2 col-lg-2 Mofart'>";
      $sql = "SELECT url, cslink FROM Images WHERE id='14'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<img id='". $row['cslink']. "' src='". $row['url']."'>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -928,22 +931,22 @@ echo "<div class='content container-fluid' id='mma'>";
         echo "<p class = 'artistfont'>";
              $sql = "SELECT mname, location, address FROM Museum WHERE id='14'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<a href='museumofart.php'>". $row['mname']. "</a><br>Location: ".$row['location'] . "<br><br>Address: ".$row['address'] ."<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
         echo "</p>";
     echo "</div>";
-echo "</div>";  
+echo "</div>";
 
 //<!-- Tate Modern-->
 echo "<div class='content container-fluid' id='tate'>";
@@ -951,16 +954,16 @@ echo "<div class='content container-fluid' id='tate'>";
 echo "<div class='col-sm-2 col-md-2 col-lg-2 Tate'>";
        $sql = "SELECT url, cslink FROM Images WHERE id='15'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<img id='". $row['cslink']. "' src='". $row['url']."'>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -972,16 +975,16 @@ echo "<div class='col-sm-2 col-md-2 col-lg-2 Tate'>";
         echo "<p class = 'artistfont'>";
          $sql = "SELECT mname, location, address FROM Museum WHERE id='15'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
-                    echo "<a href='museumofart.php'>". $row['mname']. "</a><br>Location: ".$row['location'] . "<br><br>Address: ".$row['address'] ."<br><br>";
+                    echo "<a href='tatemuseum.php'>". $row['mname']. "</a><br>Location: ".$row['location'] . "<br><br>Address: ".$row['address'] ."<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 Results";
             }
@@ -995,16 +998,16 @@ echo "<div class='content container-fluid' id='uffizi'>";
 echo "<div class='col-sm-2 col-md-2 col-lg-2 Uffizi'>";
        $sql = "SELECT url, cslink FROM Images WHERE id='12'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<img id='". $row['cslink']. "' src='". $row['url']."'>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -1015,16 +1018,16 @@ echo "<div class='col-sm-2 col-md-2 col-lg-2 Uffizi'>";
         echo "<p class = 'artistfont'>";
             $sql = "SELECT gname, glocation, gaddress FROM Galleries WHERE id='12'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
-                    echo "<a href='museumofart.php'>". $row['gname']. "</a><br>Location: ".$row['glocation'] . "<br><br>Address: ".$row['gaddress'] ."<br><br>";
+                    echo "<a href='uffizigal.php'>". $row['gname']. "</a><br>Location: ".$row['glocation'] . "<br><br>Address: ".$row['gaddress'] ."<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 Results";
             }
@@ -1038,16 +1041,16 @@ echo "<div class='content container-fluid' id='ago'>";
 echo "<div class='col-sm-2 col-md-2 col-lg-2 AGO'>";
        $sql = "SELECT url, cslink FROM Images WHERE id='11'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<img id='". $row['cslink']. "' src='". $row['url']."'>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -1056,18 +1059,18 @@ echo "<div class='col-sm-2 col-md-2 col-lg-2 AGO'>";
  //<!-- Information-->
  echo "<div class='col-sm-3 col-md-3 col-lg-3 AGO'>";
         echo "<p class = 'artistfont'>";
-             $sql = "SELECT gname, glocation, gaddress FROM Galleries WHERE id='11'";
+            $sql = "SELECT gname, glocation, gaddress FROM Galleries WHERE id='11'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
-                    echo "<a href='museumofart.php'>". $row['gname']. "</a><br>Location: ".$row['glocation'] . "<br><br>Address: ".$row['gaddress'] ."<br><br>";
+                    echo "<a href='ago.php'>". $row['gname']. "</a><br>Location: ".$row['glocation'] . "<br><br>Address: ".$row['gaddress'] ."<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 Results";
             }
@@ -1081,16 +1084,16 @@ echo "<div class='content container-fluid' id='musee'>";
 echo "<div class='col-sm-2 col-md-2 col-lg-2 Musee'>";
        $sql = "SELECT url, cslink FROM Images WHERE id='13'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo "<img id='". $row['cslink']. "' src='". $row['url']."'>";
                 }
             }
-            else 
+            else
             {
                 echo "0 results";
             }
@@ -1099,18 +1102,18 @@ echo "<div class='col-sm-2 col-md-2 col-lg-2 Musee'>";
 // <!-- Information-->
 echo "<div class='col-sm-3 col-md-3 col-lg-3 Musee'>";
         echo "<p class = 'artistfont'>";
-             $sql = "SELECT mname, location, address FROM Museum WHERE id='13'";
+            $sql = "SELECT mname, location, address FROM Museum WHERE id='13'";
             $result = $conn->query($sql);
-            if (mysqli_num_rows($result) > 0) 
+            if (mysqli_num_rows($result) > 0)
             {
             // output data of each row
-            
+
                 while($row = mysqli_fetch_assoc($result))
                 {
-                    echo "<a href='museumofart.php'>". $row['mname']. "</a><br>Location: ".$row['location'] . "<br><br>Address: ".$row['address'] ."<br><br>";
+                    echo "<a href='museemuseum.php'>". $row['mname']. "</a><br>Location: ".$row['location'] . "<br><br>Address: ".$row['address'] ."<br><br>";
                 }
             }
-            else 
+            else
             {
                 echo "0 Results";
             }
