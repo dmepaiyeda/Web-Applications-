@@ -63,7 +63,7 @@
 
     if ($_POST['Table1'] == 'artist')
     {
-        $sql = "INSERT INTO Artist (id, aFirstname, aLastname, byear, dyear, pol)
+        $sql = "INSERT INTO Artist (idArtist, aFirstname, aLastname, byear, dyear, pol)
             VALUES ('$id', '$fname', '$lname', '$byear', '$dyear', '$locat')";
 
         if (mysqli_query($conn, $sql)) {
@@ -74,7 +74,7 @@
     }
     elseif ($_POST['Table1'] == 'artwork')
     {
-        $sql = "INSERT INTO Artwork (id, piece, type, dimension, year, firstname, lastname, location)
+        $sql = "INSERT INTO Artwork (idArtwork, piece, type, dimension, year, firstname, lastname, location)
             VALUES ('$id', '$piece', '$type','$dime', '$dp' '$fname', '$lname', '$locat')";
 
         if (mysqli_query($conn, $sql)) {
@@ -119,8 +119,8 @@
 
     elseif ($_POST['Table1'] == 'shopping')
     {
-        $sql = "INSERT INTO ShoppingCart (scArtwork, scPrice)
-            VALUES ('$piece', '$price')";
+        $sql = "INSERT INTO ShoppingCart (scArtwork, scPrice,uniqueIDSC)
+            VALUES ('$piece', '$price', '$id')";
 
         if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";
@@ -164,7 +164,7 @@
     elseif ($_POST['Table1'] == 'subjects')
     {
         $sql = "INSERT INTO Subjects (id, dditem, cslink)
-            VALUES ('$id', )";
+            VALUES ('$id', '$piece', '$cslink' )";
 
         if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";

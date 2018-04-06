@@ -70,7 +70,7 @@
     {
         if (($_POST['fname'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artist SET aFirstname='$fname' WHERE id=$id";
+            $sql = "UPDATE Artist SET aFirstname='$fname' WHERE idArtist=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {
@@ -79,7 +79,7 @@
         }
         if (($_POST['lname'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artist SET aLastname='$lname' WHERE id=$id";
+            $sql = "UPDATE Artist SET aLastname='$lname' WHERE idArtist=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             }
@@ -89,7 +89,7 @@
         }
         if (($_POST['byear'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artist SET byear='$byear' WHERE id=$id";
+            $sql = "UPDATE Artist SET byear='$byear' WHERE idArtist=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {
@@ -98,7 +98,7 @@
         }
         if (($_POST['dyear'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artist SET dyear='$dyear' WHERE id=$id";
+            $sql = "UPDATE Artist SET dyear='$dyear' WHERE idArtist=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {
@@ -107,7 +107,7 @@
         }
         if (($_POST['pol'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artist SET pol='$pol' WHERE id=$id";
+            $sql = "UPDATE Artist SET pol='$pol' WHERE idArtist=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {
@@ -119,7 +119,7 @@
     {
         if (($_POST['fname'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artwork SET firstname='$fname' WHERE id=$id";
+            $sql = "UPDATE Artwork SET firstname='$fname' WHERE idArtwork=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {
@@ -128,7 +128,7 @@
         }
         if (($_POST['lname'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artwork SET lastname='$lname' WHERE id=$id";
+            $sql = "UPDATE Artwork SET lastname='$lname' WHERE idArtwork=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             }
@@ -138,7 +138,7 @@
         }
         if (($_POST['price'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artwork SET price='$price' WHERE id=$id";
+            $sql = "UPDATE Artwork SET price='$price' WHERE idArtwork=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {
@@ -147,7 +147,7 @@
         }
         if (($_POST['dop'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artwork SET year='$dop' WHERE id=$id";
+            $sql = "UPDATE Artwork SET year='$dop' WHERE idArtwork=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {
@@ -156,7 +156,7 @@
         }
         if (($_POST['dime'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artwork SET dimension='$dime' WHERE id=$id";
+            $sql = "UPDATE Artwork SET dimension='$dime' WHERE idArtwork=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {
@@ -174,7 +174,7 @@
         }
         if (($_POST['location'] != "") && ($_POST['id'] != ""))
         {
-            $sql = "UPDATE Artwork SET location='$locat' WHERE id=$id";
+            $sql = "UPDATE Artwork SET location='$locat' WHERE idArtwork=$id";
             if (mysqli_query($conn, $sql)) {
                 echo "Record updated successfully";
             } else {

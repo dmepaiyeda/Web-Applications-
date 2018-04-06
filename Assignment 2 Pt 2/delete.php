@@ -32,7 +32,7 @@
     if ($_POST['Table'] == 'artist')
     {
         $item = $_POST['item'];
-        $sql = "SELECT id FROM Artist WHERE aFirstname='$item'";
+        $sql = "SELECT idArtist FROM Artist WHERE aFirstname='$item'";
         $result = $conn->query($sql);
         if (mysqli_num_rows($result) > 0)
         {
@@ -40,7 +40,7 @@
             while($row = mysqli_fetch_assoc($result))
             {
                 $num = $row['id'];
-                $sql = "DELETE FROM artist WHERE id= $num";
+                $sql = "DELETE FROM artist WHERE idArtist= $num";
 
                 if (mysqli_query($conn, $sql))
                 {
@@ -103,7 +103,7 @@
     elseif ($_POST['Table'] == 'artwork')
     {
         $item = $_POST['item'];
-        $sql = "SELECT id FROM Artwork WHERE piece='$item'";
+        $sql = "SELECT idArtwork FROM Artwork WHERE piece='$item'";
         $result = $conn->query($sql);
         if (mysqli_num_rows($result) > 0)
         {
@@ -111,7 +111,7 @@
             while($row = mysqli_fetch_assoc($result))
             {
                 $num = $row['id'];
-                $sql = "DELETE FROM artwork WHERE id= $num";
+                $sql = "DELETE FROM artwork WHERE idArtwork= $num";
 
                 if (mysqli_query($conn, $sql))
                 {
