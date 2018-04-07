@@ -51,7 +51,7 @@
                     echo "Error deleting record: " . mysqli_error($conn);
                 }
 
-                $sql = "DELETE FROM Subjects WHERE id= $num";
+                $sql = "DELETE FROM Subjects WHERE uniqueID= $num";
 
                 if (mysqli_query($conn, $sql))
                 {
@@ -123,7 +123,7 @@
                 }
 
 
-                $sql = "DELETE FROM Subjects WHERE id= $num";
+                $sql = "DELETE FROM Subjects WHERE uniqueID= $num";
 
                 if (mysqli_query($conn, $sql))
                 {
@@ -183,7 +183,7 @@
                     echo "Error deleting record: " . mysqli_error($conn);
                 }
 
-                $sql = "DELETE FROM Subjects WHERE id= $num";
+                $sql = "DELETE FROM Subjects WHERE uniqueID= $num";
 
                 if (mysqli_query($conn, $sql))
                 {
@@ -255,7 +255,7 @@
                 }
 
 
-                $sql = "DELETE FROM Subjects WHERE id= $num";
+                $sql = "DELETE FROM Subjects WHERE uniqueID= $num";
 
                 if (mysqli_query($conn, $sql))
                 {
