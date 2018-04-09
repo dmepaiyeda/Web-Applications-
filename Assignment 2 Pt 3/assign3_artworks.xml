@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="assign3_artistsstyle.xsl"?>
 <artworks>
 	<artwork ID="1">
-		<piece>Campbells Soup Can</piece>
+		<piece>Campbell's Soup Can</piece>
 		<artists>
 			<artist ID="6">
 				<firstname>Andy</firstname>
@@ -10,19 +10,19 @@
 				<birth>1928</birth>
 				<death>1987</death>
 				<pol>New York City</pol>
-				<artistGenres ID="g6">
-					<artistGenre>Pop Art</artistGenre>
-					<artistGenre>Modern Art</artistGenre>
-					<artistGenre>Abstract Impressionism</artistGenre>
-				</artistGenres>
-				<famousAArts ID="f6">
-					<famousAArt>Campbells Soup Can</famousAArt>
-					<famousAArt>Green Coca-Cola Bottles</famousAArt>
-					<famousAArt>Mickey Mouse</famousAArt>
-					<famousAArt>Flowers Series</famousAArt>
-					<famousAArt>Eight Elvises</famousAArt>
-				</famousAArts>
-				<artistImage>https://upload.wikimedia.org/wikipedia/commons/4/42/Andy_Warhol_1975.jpg</artistImage>
+				<genres ID="g6">
+					<genre>Pop Art</genre>
+					<genre>Modern Art</genre>
+					<genre>Abstract Impressionism</genre>
+				</genres>
+				<famousArts ID="f6">
+					<famousArt>Campbells Soup Can</famousArt>
+					<famousArt>Green Coca-Cola Bottles</famousArt>
+					<famousArt>Mickey Mouse</famousArt>
+					<famousArt>Flowers Series</famousArt>
+					<famousArt>Eight Elvises</famousArt>
+				</famousArts>
+				<image>https://upload.wikimedia.org/wikipedia/commons/4/42/Andy_Warhol_1975.jpg</image>
 			</artist>
 		</artists>
 		<type>Synthetic Polymer Paint</type>
@@ -35,17 +35,17 @@
 				<doe>1929</doe>
 				<location>United States of America</location>
 				<address>11 West 53 Street, Manhattan</address>
-				<famousMArts ID="m14">
-					<famousAART>Les Demoiselles dAvignon</famousAART>
-					<famousAART>Reflections of Clouds on Water</famousAART>
-					<famousAART>The Song of Love</famousAART>
-				</famousMArts>
+				<famousArts ID="m14">
+					<famousArt>Les Demoiselles dAvignon</famousArt>
+					<famousArt>Reflections of Clouds on Water</famousArt>
+					<famousArt>The Song of Love</famousArt>
+				</famousArts>
 				<builders ID="b14">
 					<builder>Aby Aldrich Rockefeller</builder>
 					<builder>Lillie P. Bliss</builder>
 					<builder>Mary Quinn Sullivan</builder>
 				</builders>
-				<museumImage>https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg</museumImage>
+				<image>https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg</image>
 			</museum>
 		</museums>
 		<shoppingcartPrice>200</shoppingcartPrice>
@@ -61,19 +61,19 @@
 				<birth>1853</birth>
 				<death>1890</death>
 				<pol>Paris</pol>
-				<artistGenres ID="g10">
-					<artistGenre>Impressionism</artistGenre>
-					<artistGenre>Realism</artistGenre>
-					<artistGenre>Post-impressionism</artistGenre>
-				</artistGenres>
-				<famousAArts ID="f10">
-					<famousAArt>Starry Night</famousAArt>
-					<famousAArt>Self-portrait</famousAArt>
-					<famousAArt>The Potato Eaters</famousAArt>
-					<famousAArt>Irises</famousAArt>
-					<famousAArt>Café Terrace at Night</famousAArt>
-				</famousAArts>
-				<artistImage>https://www.artble.com/imgs/3/2/c/55784/vincent_van_gogh.jpg</artistImage>
+				<genres ID="g10">
+					<genre>Impressionism</genre>
+					<genre>Realism</genre>
+					<genre>Post-impressionism</genre>
+				</genres>
+				<famousArts ID="f10">
+					<famousArt>Starry Night</famousArt>
+					<famousArt>Self-portrait</famousArt>
+					<famousArt>The Potato Eaters</famousArt>
+					<famousArt>Irises</famousArt>
+					<famousArt>Café Terrace at Night</famousArt>
+				</famousArts>
+				<image>https://www.artble.com/imgs/3/2/c/55784/vincent_van_gogh.jpg</image>
 			</artist>
 		</artists>
 		<type>Oil Paint</type>
@@ -86,17 +86,17 @@
 				<doe>1929</doe>
 				<location>United States of America</location>
 				<address>11 West 53 Street, Manhattan</address>
-				<famousMArts ID="m14">
-					<famousMArt>Les Demoiselles dAvignon</famousMArt>
-					<famousMArt>Reflections of Clouds on Water</famousMArt>
-					<famousMArt>The Song of Love</famousMArt>
-				</famousMArts>
+				<famousArts ID="f14">
+					<famousArt>Les Demoiselles dAvignon</famousArt>
+					<famousArt>Reflections of Clouds on Water</famousArt>
+					<famousArt>The Song of Love</famousArt>
+				</famousArts>
 				<builders ID="b14">
 					<builder>Aby Aldrich Rockefeller</builder>
 					<builder>Lillie P. Bliss</builder>
 					<builder>Mary Quinn Sullivan</builder>
 				</builders>
-				<museumImage>https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg</museumImage>
+				<image>https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg</image>
 			</museum>
 		</museums>
 		<shoppingcart>120</shoppingcart>
@@ -105,8 +105,26 @@
 	</artwork>
 	<artwork ID="3">
 		<piece>The Birth of Venus</piece>
-		<firstname>Sandro</firstname>
-		<lastname>Botticello</lastname>
+		<artists>
+			<artist ID="7">
+				<firstname>Sandro</firstname>
+				<lastname>Botticelli</lastname>
+				<birth>1445</birth>
+				<death>1510</death>
+				<pol>Florence, Italy</pol>
+				<genres ID="g7">
+					<genre>Renaissance</genre>
+				</genres>
+				<famousArts ID="f7">
+					<famousArt>The Birth of Venus</famousArt>
+					<famousArt>Primavera</famousArt>
+					<famousArt>Adoration of the Magi</famousArt>
+					<famousArt>Mars and Venus</famousArt>
+					<famousArt>Madonna of the Magnificent</famousArt>
+				</famousArts>
+				<image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sandro_Botticelli_083.jpg/1200px-Sandro_Botticelli_083.jpg</image>
+			</artist>
+		</artists>
 		<type>Tempera</type>
 		<dimension>672.5cm x 278.9cm</dimension>
 		<year>1486</year>
@@ -117,16 +135,16 @@
 				<doe>1581</doe>
 				<location>Italy</location>
 				<address>Piazzale degli Uffizi, 6, 50122 Firenze FI</address>
-				<famousGArts ID="g12">
-					<famousGArt>Santa Trinita Maestà</famousGArt>
-					<famousGArt>Primavera</famousGArt>
-					<famousGArt>The Birth of Venus</famousGArt>
-				</famousGArts>
+				<famousArts ID="f12">
+					<famousArt>Santa Trinita Maestà</famousArt>
+					<famousArt>Primavera</famousArt>
+					<famousArt>The Birth of Venus</famousArt>
+				</famousArts>
 				<builders ID="b12">
 					<builder>Giorgio Vasari</builder>
 					<builder>Alfonso Parigi</builder>
 				</builders>
-				<galleryImage>https://nationalpostcom.files.wordpress.com/2016/07/travel_trip_essentials_florence_47275094.jpg</galleryImage>
+				<image>https://nationalpostcom.files.wordpress.com/2016/07/travel_trip_essentials_florence_47275094.jpg</image>
 			</gallery>
 		</galleries>
 		<shoppingcart>250</shoppingcart>
@@ -142,17 +160,17 @@
 				<birth>1452</birth>
 				<death>1519</death>
 				<pol>Milan</pol>
-				<artistGenres ID="g8">
-					<artistGenre>Renaissance</artistGenre>
-				</artistGenres>
-				<famousAArts ID="f8">
-					<famousAART>Mona Lisa</famousAART>
-					<famousAART>The Last Supper</famousAART>
-					<famousAART>St. John the Baptist</famousAART>
-					<famousAART>Female Head</famousAART>
-					<famousAART>Head of Christ</famousAART>
-				</famousAArts>
-				<artistImage>https://news.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg</artistImage>
+				<genres ID="g8">
+					<genre>Renaissance</genre>
+				</genres>
+				<famousArts ID="f8">
+					<famousArt>Mona Lisa</famousArt>
+					<famousArt>The Last Supper</famousArt>
+					<famousArt>St. John the Baptist</famousArt>
+					<famousArt>Female Head</famousArt>
+					<famousArt>Head of Christ</famousArt>
+				</famousArts>
+				<image>https://news.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg</image>
 			</artist>
 		</artists>
 		<type>Oil Paint</type>
@@ -160,23 +178,23 @@
 		<year>1503</year>
 		<price>N/A</price>
 		<museums>
-			<museum ID="14">
+			<museum ID="13">
 				<name>The Louvre</name>
 				<doe>1793</doe>
 				<location>France</location>
 				<address>Rue de Rivoli, 75001 Paris</address>
-				<famousMArts ID="m14">
-					<famousMART>The Lacemaker</famousMART>
-					<famousMArt>Bathsheba at her Bath</famousMArt>
-					<famousMArt>St. John the Baptist</famousMArt>
-				</famousMArts>
-				<builders ID="b14">
+				<famousArts ID="f13">
+					<famousArt>The Lacemaker</famousArt>
+					<famousArt>Bathsheba at her Bath</famousArt>
+					<famousArt>St. John the Baptist</famousArt>
+				</famousArts>
+				<builders ID="b13">
 					<builder>Pierre Lescot</builder>
 					<builder>Hector Lefuel</builder>
 					<builder>Louis Visconti</builder>
 					<builder>Louis Le Vau</builder>
 				</builders>
-				<museumImage>https://lh5.googleusercontent.com/p/AF1QipOWiV1r2xO_9DbPoFE-Bgbd0folXkC_vyWzV-kH=w240-h160-k-no</museumImage>
+				<image>https://lh5.googleusercontent.com/p/AF1QipOWiV1r2xO_9DbPoFE-Bgbd0folXkC_vyWzV-kH=w240-h160-k-no</image>
 			</museum>
 		</museums>
 		<shoppingcart>300</shoppingcart>
@@ -192,20 +210,20 @@
 				<birth>1881</birth>
 				<death>1973</death>
 				<pol>France</pol>
-				<artistGenres ID="g9">
-					<artistGenre>Cubism</artistGenre>
-					<artistGenre>Surrealism</artistGenre>
-					<artistGenre>Expressionism</artistGenre>
-					<artistGenre>Post-Impressionism</artistGenre>
-				</artistGenres>
-				<famousAArts ID="f9">
-					<famousAART>The Old Guitarist</famousAART>
-					<famousAART>Girl before a Mirror</famousAART>
-					<famousAART>The Accordionist</famousAART>
-					<famousAART>Celestina</famousAART>
-					<famousAART>Ma Jolie</famousAART>
-				</famousAArts>
-				<artistImage>https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzU0MDk2MTQx/pablo-picasso-9440021-1-402.jpg</artistImage>
+				<genres ID="g9">
+					<genre>Cubism</genre>
+					<genre>Surrealism</genre>
+					<genre>Expressionism</genre>
+					<genre>Post-Impressionism</genre>
+				</genres>
+				<famousArts ID="f9">
+					<famousArt>The Old Guitarist</famousArt>
+					<famousArt>Girl before a Mirror</famousArt>
+					<famousArt>The Accordionist</famousArt>
+					<famousArt>Celestina</famousArt>
+					<famousArt>Ma Jolie</famousArt>
+				</famousArts>
+				<image>https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzU0MDk2MTQx/pablo-picasso-9440021-1-402.jpg</image>
 			</artist>
 		</artists>
 		<type>Oil on Canvas</type>
@@ -218,15 +236,15 @@
 				<doe>2000</doe>
 				<location>United Kingdom</location>
 				<address>Bankside; London, SE1</address>
-				<famousMArts ID="m15">
-					<famousMArt>I Do, I Undo, I Redo</famousMArt>
-					<famousMArt>Double Bind</famousMArt>
-					<famousMArt>Marsyas</famousMArt>
-				</famousMArts>
+				<famousArts ID="f15">
+					<famousArt>I Do, I Undo, I Redo</famousArt>
+					<famousArt>Double Bind</famousArt>
+					<famousArt>Marsyas</famousArt>
+				</famousArts>
 				<builders ID="b15">
 					<builder>Sir Giles Gilbert Scott</builder>
 				</builders>
-				<museumImage>http://www.vigoenfotos.com/londres/imagenes/london/tate_modern_museum/g_vigoenfotos_6453m.jpg</museumImage>
+				<image>http://www.vigoenfotos.com/londres/imagenes/london/tate_modern_museum/g_vigoenfotos_6453m.jpg</image>
 			</museum>
 		</museums>
 		<shoppingcart>140</shoppingcart>
