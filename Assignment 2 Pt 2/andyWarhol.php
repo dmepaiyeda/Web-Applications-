@@ -362,7 +362,7 @@
 
 
     echo "<div class='content container-fluid'id='andy'>";
-        $sql = "SELECT aFirstname, aLastname FROM Artist WHERE id='6'";
+        $sql = "SELECT aFirstname, aLastname FROM Artist WHERE idArtist='6'";
             $result = $conn->query($sql);
             if (mysqli_num_rows($result) > 0)
             {
@@ -399,7 +399,7 @@
       //<!-- Information -->
       echo "<div class='col-sm-3 col-md-6 col-lg-4'>";
           echo "<p>";
-            $sql = "SELECT dyear,byear,pol FROM Artist WHERE id='6'";
+            $sql = "SELECT dyear,byear,pol FROM Artist WHERE idArtist='6'";
             $result = $conn->query($sql);
             if (mysqli_num_rows($result) > 0)
             {
