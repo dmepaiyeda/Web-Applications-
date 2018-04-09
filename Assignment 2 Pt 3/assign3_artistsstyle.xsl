@@ -17,7 +17,7 @@
   </METADATA>
   <RESULTSET FOUND="">
         <xsl:for-each select="./artists/artist ">
-              <ROW bgcolor="#ffff00"MODID="" RECORDID="">
+              <ROW bgcolor="#ffff00" MODID="" RECORDID="">
                       <COL><DATA><xsl:value-of select="@ID " /></DATA></COL>
                       <COL> <DATA> </DATA></COL>
                       <COL> <DATA> </DATA></COL>
@@ -25,7 +25,7 @@
                       <COL><DATA><xsl:value-of select="./lastname " /></DATA></COL>
                       <COL><DATA><xsl:value-of select="./birth " /></DATA></COL>
                       <COL><DATA><xsl:value-of select="./death " /></DATA></COL>
-                      <COL><DATA><xsl:value-of select="./pol " /></DATA></COL> 
+                      <COL><DATA><xsl:value-of select="./pol " /></DATA></COL>
               </ROW>
         </xsl:for-each>
  </RESULTSET>
@@ -33,4 +33,3 @@
       </xsl:template>
 
 </xsl:stylesheet>
-
