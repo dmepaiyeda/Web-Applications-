@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artworks>
+	<artwrork ID="1">
+		<piece>Campbells Soup Can</piece>
+		<firstname>Andy</firstname>
+		<lastname>Warhol</lastname>
+		<type>Synthetic Polymer Paint</type>
+		<dimension>51cm x 41cm</dimension>
+		<year>1962</year>
+		<price>N/A</price>
+		<location>Museum of Modern Art</location>
+		<shoppingcart>200</shoppingcart>
+		<genre>Pop Art</genre>
+		<image>http://1.bp.blogspot.com/-zekY4NLo1_c/UD_uVdNgEnI/AAAAAAAAAnA/rZuPJJ35Y4w/s1600/32+campbells.jpeg</image>
+	</artwrork>
+	<artwrork ID="2">
+		<piece>Starry Night</piece>
+		<firstname>Vincent</firstname>
+		<lastname>Van Gogh</lastname>
+		<type>Oil Paint</type>
+		<dimension>73.7cm x 92.1cm</dimension>
+		<year>1889</year>
+		<price>100000000</price>
+		<location>Museum of Modern Art</location>
+		<shoppingcart>120</shoppingcart>
+		<genre>Post-impressionism</genre>
+		<image>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg</image>
+	</artwrork>
+	<artwrork ID="3">
+		<piece>The Birth of Venus</piece>
+		<firstname>Sandro</firstname>
+		<lastname>Botticello</lastname>
+		<type>Tempera</type>
+		<dimension>672.5cm x 278.9cm</dimension>
+		<year>1486</year>
+		<price>N/A</price>
+		<location>Uffizi Gallery</location>
+		<shoppingcart>250</shoppingcart>
+		<genre>Renaissance</genre>
+		<image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/450px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg</image>
+	</artwrork>
+	<artwrork ID="4">
+		<piece>The Last Supper</piece>
+		<firstname>Leonardo</firstname>
+		<lastname>Da Vinci</lastname>
+		<type>Fresco-secco</type>
+		<dimension>460cm x 880cm</dimension>
+		<year>1495</year>
+		<price>N/A</price>
+		<location>Convent of Santa Maria delle Grazie, Milan</location>
+		<shoppingcart>300</shoppingcart>
+		<genre>Renaissance</genre>
+		<image>http://milanostyle.com/wp-content/uploads/Last-Supper-Da-Vinci-1495.jpg</image>
+	</artwrork>
+	<artwrork ID="5">
+		<piece>The Weeping Woman</piece>
+		<firstname>Pablo</firstname>
+		<lastname>Picaso</lastname>
+		<type>Oil on Canvas</type>
+		<dimension>60cm x 49cm</dimension>
+		<year>1937</year>
+		<price>N/A</price>
+		<location>Tate Modern</location>
+		<shoppingcart>140</shoppingcart>
+		<genre>Cubism</genre>
+		<image>https://i.pinimg.com/originals/6c/f6/78/6cf6785c2931400bc048b06a597f23bd.jpg</image>
+	</artwrork>
+</artworks>
+<artists>
+	<artist id="6">
+		<firstname>Andy</firstname>
+		<lastname>Warhol</lastname>
+		<birth>1928</birth>
+		<death>1987</death>
+		<pol>New York City</pol>
+		<genres id="g6">
+			<genre>Pop Art</genre>
+			<genre>Modern Art</genre>
+			<genre>Abstract Impressionism</genre>
+		</genres>
+		<famousArts id="f6">
+			<famousArt>Campbells Soup Can</famousArt>
+			<famousArt>Green Coca-Cola Bottles</famousArt>
+			<famousArt>Mickey Mouse</famousArt>
+			<famousArt>Flowers Series</famousArt>
+			<famousArt>Eight Elvises</famousArt>
+		</famousArts>
+		<image>https://upload.wikimedia.org/wikipedia/commons/4/42/Andy_Warhol_1975.jpg</image>
+	</artist>
+	<artist id="7">
+		<firstname>Claude</firstname>
+		<lastname>Monet</lastname>
+		<birth>1840</birth>
+		<death>1926</death>
+		<pol>Paris</pol>
+		<genres id="g7">
+			<genre>Impressionism</genre>
+			<genre>Realism</genre>
+		</genres>
+		<famousArts id="f7">
+			<famousArt>San Giorgio Maggiore at Dusk</famousArt>
+			<famousArt>Poplar Series</famousArt>
+			<famousArt>Haystack Series</famousArt>
+			<famousArt>Impression, Sunrise</famousArt>
+			<famousArt>Rouen Cathedral Series</famousArt>
+		</famousArts>
+		<image>https://www.thefamouspeople.com/profiles/images/claude-monet-3.jpg</image>
+	</artist>
+	<artist id="8">
+		<firstname>Leonardo</firstname>
+		<lastname>Da Vinci</lastname>
+		<birth>1452</birth>
+		<death>1519</death>
+		<pol>Milan</pol>
+		<genres id="g8">
+			<genre>Renaissance</genre>
+		</genres>
+		<famousArts id="f8">
+			<famousArt>Mona Lisa</famousArt>
+			<famousArt>The Last Supper</famousArt>
+			<famousArt>St. John the Baptist</famousArt>
+			<famousArt>Female Head</famousArt>
+			<famousArt>Head of Christ</famousArt>
+		</famousArts>
+		<image>https://news.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg</image>
+	</artist>
+	<artist id="9">
+		<firstname>Michelangelo</firstname>
+		<lastname>di Lodovico Buonarroti Simoni</lastname>
+		<birth>1475</birth>
+		<death>1564</death>
+		<pol>Italy</pol>
+		<genres id="g9">
+			<genre>Renaissance</genre>
+		</genres>
+		<famousArts id="f9">
+			<famousArt>The Sistine Chapel Ceiling</famousArt>
+			<famousArt>The Last Judgement</famousArt>
+			<famousArt>Battle of Cascina</famousArt>
+			<famousArt>Torment of Saint Anthony</famousArt>
+			<famousArt>The Entombment</famousArt>
+		</famousArts>
+		<image>https://media1.britannica.com/eb-media/46/75046-004-E437D9A2.jpg</image>
+	</artist>
+	<artist id="10">
+		<firstname>Vincent</firstname>
+		<lastname>Van Gogh</lastname>
+		<birth>1853</birth>
+		<death>1890</death>
+		<pol>Paris</pol>
+		<genres id="g10">
+			<genre>Impressionism</genre>
+			<genre>Realism</genre>
+			<genre>Post-impressionism</genre>
+		</genres>
+		<famousArts id="f10">
+			<famousArt>Starry Night</famousArt>
+			<famousArt>Self-portrait</famousArt>
+			<famousArt>The Potato Eaters</famousArt>
+			<famousArt>Irises</famousArt>
+			<famousArt>Café Terrace at Night</famousArt>
+		</famousArts>
+		<image>https://www.artble.com/imgs/3/2/c/55784/vincent_van_gogh.jpg</image>
+	</artist>
+</artists>
+<museums>
+	<museum id="13">
+		<name>Musee Des Beaux-Arts De Bordeaux</name>
+		<doe>1801</doe>
+		<location>France</location>
+		<address>20 Cours dAlbret, 33000 Bordeaux</address>
+		<famousArts id="m13">
+			<famousArt>Eliezer and Rebecca</famousArt>
+			<famousArt>Greece on the Ruins of Missolo</famousArt>
+			<famousArt>The Banks of the Oise</famousArt>
+		</famousArts>
+		<builders id="b13">
+			<builder>Pierre Lacour</builder>
+		</builders>
+		<image>http://actualites-pro-museumexperts.com/wp-content/uploads/2013/12/Absolute-barrieres-.jpg</image>
+	</museum>
+	<museum id="14">
+		<name>Museum of Modern Art</name>
+		<doe>1929</doe>
+		<location>United States of America</location>
+		<address>11 West 53 Street, Manhattan</address>
+		<famousArts id="m14">
+			<famousArt>Les Demoiselles dAvignon</famousArt>
+			<famousArt>Reflections of Clouds on Water</famousArt>
+			<famousArt>The Song of Love</famousArt>
+		</famousArts>
+		<builders id="b14">
+			<builder>Aby Aldrich Rockefeller</builder>
+			<builder>Lillie P. Bliss</builder>
+			<builder>Mary Quinn Sullivan</builder>
+		</builders>
+		<image>https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg</image>
+	</museum>
+	<museum id="15">
+		<name>Tate Modern</name>
+		<doe>2000</doe>
+		<location>United Kingdom</location>
+		<address>Bankside; London, SE1</address>
+		<famousArts id="m15">
+			<famousArt>I Do, I Undo, I Redo</famousArt>
+			<famousArt>Double Bind</famousArt>
+			<famousArt>Marsyas</famousArt>
+		</famousArts>
+		<builders id="b15">
+			<builder>Sir Giles Gilbert Scott</builder>
+		</builders>
+		<image>http://www.vigoenfotos.com/londres/imagenes/london/tate_modern_museum/g_vigoenfotos_6453m.jpg</image>
+	</museum>
+</museums>
+<galleries>
+	<gallery id="11">
+		<name>Art Gallery of Ontario</name>
+		<doe>1900</doe>
+		<location>Canada</location>
+		<address>317 Dundas St W, Toronto ON M5T 1G4</address>
+		<famousArts id="g11">
+			<famousArt>The Baroque</famousArt>
+			<famousArt>Adam and Eve</famousArt>
+			<famousArt>The Crucified Christ</famousArt>
+		</famousArts>
+		<builders id="b11">
+			<builder>Group of private members of the Ontario Society of Artists</builder>
+		</builders>
+		<image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/AGO_at_dusk.jpg/1200px-AGO_at_dusk.jpg</image>
+	</gallery>
+	<gallery id="12">
+		<name>Uffizi Gallery</name>
+		<doe>1581</doe>
+		<location>Italy</location>
+		<address>Piazzale degli Uffizi, 6, 50122 Firenze FI</address>
+		<famousArts id="g12">
+			<famousArt>Santa Trinita Maestà</famousArt>
+			<famousArt>Primavera</famousArt>
+			<famousArt>The Birth of Venus</famousArt>
+		</famousArts>
+		<builders id="b12">
+			<builder>Giorgio Vasari</builder>
+			<builder>Alfonso Parigi</builder>
+		</builders>
+		<image>https://nationalpostcom.files.wordpress.com/2016/07/travel_trip_essentials_florence_47275094.jpg</image>
+	</gallery>
+</galleries>
