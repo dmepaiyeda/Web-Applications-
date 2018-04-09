@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<?xml-stylesheet type="text/xsl" href="assign3_style.xsl"?>-->
+<?xml-stylesheet type="text/xsl" href="assign3_artistsstyle.xsl"?>
 <artworks>
 	<artwork ID="1">
 		<piece>Campbells Soup Can</piece>
 		<artists>
-			<artist id="6">
+			<artist ID="6">
 				<firstname>Andy</firstname>
 				<lastname>Warhol</lastname>
 				<birth>1928</birth>
 				<death>1987</death>
 				<pol>New York City</pol>
-				<artistGenres id="g6">
+				<artistGenres ID="g6">
 					<artistGenre>Pop Art</artistGenre>
 					<artistGenre>Modern Art</artistGenre>
 					<artistGenre>Abstract Impressionism</artistGenre>
 				</artistGenres>
-				<famousAArts id="f6">
+				<famousAArts ID="f6">
 					<famousAArt>Campbells Soup Can</famousAArt>
 					<famousAArt>Green Coca-Cola Bottles</famousAArt>
 					<famousAArt>Mickey Mouse</famousAArt>
@@ -30,17 +30,17 @@
 		<year>1962</year>
 		<price>N/A</price>
 		<museums>
-			<museum id="14">
+			<museum ID="14">
 				<name>Museum of Modern Art</name>
 				<doe>1929</doe>
 				<location>United States of America</location>
 				<address>11 West 53 Street, Manhattan</address>
-				<famousMArts id="m14">
+				<famousMArts ID="m14">
 					<famousAART>Les Demoiselles dAvignon</famousAART>
 					<famousAART>Reflections of Clouds on Water</famousAART>
 					<famousAART>The Song of Love</famousAART>
 				</famousMArts>
-				<builders id="b14">
+				<builders ID="b14">
 					<builder>Aby Aldrich Rockefeller</builder>
 					<builder>Lillie P. Bliss</builder>
 					<builder>Mary Quinn Sullivan</builder>
@@ -55,18 +55,18 @@
 	<artwork ID="2">
 		<piece>Starry Night</piece>
 		<artists>
-			<artist id="10">
+			<artist ID="10">
 				<firstname>Vincent</firstname>
 				<lastname>Van Gogh</lastname>
 				<birth>1853</birth>
 				<death>1890</death>
 				<pol>Paris</pol>
-				<artistGenres id="g10">
+				<artistGenres ID="g10">
 					<artistGenre>Impressionism</artistGenre>
 					<artistGenre>Realism</artistGenre>
 					<artistGenre>Post-impressionism</artistGenre>
 				</artistGenres>
-				<famousAArts id="f10">
+				<famousAArts ID="f10">
 					<famousAArt>Starry Night</famousAArt>
 					<famousAArt>Self-portrait</famousAArt>
 					<famousAArt>The Potato Eaters</famousAArt>
@@ -81,17 +81,17 @@
 		<year>1889</year>
 		<price>100000000</price>
 		<museums>
-			<museum id="14">
+			<museum ID="14">
 				<name>Museum of Modern Art</name>
 				<doe>1929</doe>
 				<location>United States of America</location>
 				<address>11 West 53 Street, Manhattan</address>
-				<famousMArts id="m14">
+				<famousMArts ID="m14">
 					<famousMArt>Les Demoiselles dAvignon</famousMArt>
 					<famousMArt>Reflections of Clouds on Water</famousMArt>
 					<famousMArt>The Song of Love</famousMArt>
 				</famousMArts>
-				<builders id="b14">
+				<builders ID="b14">
 					<builder>Aby Aldrich Rockefeller</builder>
 					<builder>Lillie P. Bliss</builder>
 					<builder>Mary Quinn Sullivan</builder>
@@ -112,17 +112,17 @@
 		<year>1486</year>
 		<price>N/A</price>
 		<galleries>
-			<gallery id="12">
+			<gallery ID="12">
 				<name>Uffizi Gallery</name>
 				<doe>1581</doe>
 				<location>Italy</location>
 				<address>Piazzale degli Uffizi, 6, 50122 Firenze FI</address>
-				<famousGArts id="g12">
+				<famousGArts ID="g12">
 					<famousGArt>Santa Trinita Maestà</famousGArt>
 					<famousGArt>Primavera</famousGArt>
 					<famousGArt>The Birth of Venus</famousGArt>
 				</famousGArts>
-				<builders id="b12">
+				<builders ID="b12">
 					<builder>Giorgio Vasari</builder>
 					<builder>Alfonso Parigi</builder>
 				</builders>
@@ -136,16 +136,16 @@
 	<artwork ID="4">
 		<piece>Mona Lisa</piece>
 		<artists>
-			<artist id="8">
+			<artist ID="8">
 				<firstname>Leonardo</firstname>
 				<lastname>Da Vinci</lastname>
 				<birth>1452</birth>
 				<death>1519</death>
 				<pol>Milan</pol>
-				<artistGenres id="g8">
+				<artistGenres ID="g8">
 					<artistGenre>Renaissance</artistGenre>
 				</artistGenres>
-				<famousAArts id="f8">
+				<famousAArts ID="f8">
 					<famousAART>Mona Lisa</famousAART>
 					<famousAART>The Last Supper</famousAART>
 					<famousAART>St. John the Baptist</famousAART>
@@ -160,17 +160,17 @@
 		<year>1503</year>
 		<price>N/A</price>
 		<museums>
-			<museum id="14">
+			<museum ID="14">
 				<name>The Louvre</name>
 				<doe>1793</doe>
 				<location>France</location>
 				<address>Rue de Rivoli, 75001 Paris</address>
-				<famousMArts id="m14">
+				<famousMArts ID="m14">
 					<famousMART>The Lacemaker</famousMART>
 					<famousMArt>Bathsheba at her Bath</famousMArt>
 					<famousMArt>St. John the Baptist</famousMArt>
 				</famousMArts>
-				<builders id="b14">
+				<builders ID="b14">
 					<builder>Pierre Lescot</builder>
 					<builder>Hector Lefuel</builder>
 					<builder>Louis Visconti</builder>
@@ -186,19 +186,19 @@
 	<artwork ID="5">
 		<piece>The Weeping Woman</piece>
 		<artists>
-			<artist id="9">
+			<artist ID="9">
 				<firstname>Pablo</firstname>
 				<lastname>Picasso</lastname>
 				<birth>1881</birth>
 				<death>1973</death>
 				<pol>France</pol>
-				<artistGenres id="g9">
+				<artistGenres ID="g9">
 					<artistGenre>Cubism</artistGenre>
 					<artistGenre>Surrealism</artistGenre>
 					<artistGenre>Expressionism</artistGenre>
 					<artistGenre>Post-Impressionism</artistGenre>
 				</artistGenres>
-				<famousAArts id="f9">
+				<famousAArts ID="f9">
 					<famousAART>The Old Guitarist</famousAART>
 					<famousAART>Girl before a Mirror</famousAART>
 					<famousAART>The Accordionist</famousAART>
@@ -213,17 +213,17 @@
 		<year>1937</year>
 		<price>N/A</price>
 		<museums>
-			<museum id="15">
+			<museum ID="15">
 				<name>Tate Modern</name>
 				<doe>2000</doe>
 				<location>United Kingdom</location>
 				<address>Bankside; London, SE1</address>
-				<famousMArts id="m15">
+				<famousMArts ID="m15">
 					<famousMArt>I Do, I Undo, I Redo</famousMArt>
 					<famousMArt>Double Bind</famousMArt>
 					<famousMArt>Marsyas</famousMArt>
 				</famousMArts>
-				<builders id="b15">
+				<builders ID="b15">
 					<builder>Sir Giles Gilbert Scott</builder>
 				</builders>
 				<museumImage>http://www.vigoenfotos.com/londres/imagenes/london/tate_modern_museum/g_vigoenfotos_6453m.jpg</museumImage>
