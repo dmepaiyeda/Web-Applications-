@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-stylesheet type="text/xsl" href="assign3_style.xsl"?>-->
+<museums>
+  <museum ID="13">
+    <name>Musee Des Beaux-Arts De Bordeaux</name>
+    <doe>1801</doe>
+    <location>France</location>
+    <address>20 Cours dAlbret, 33000 Bordeaux</address>
+    <famousArts ID="m13">
+      <famousArt>Eliezer and Rebecca</famousArt>
+      <famousArt>Greece on the Ruins of Missolo</famousArt>
+      <famousArt>The Banks of the Oise</famousArt>
+    </famousArts>
+    <builders ID="b13">
+      <builder>Pierre Lacour</builder>
+    </builders>
+    <image>http://actualites-pro-museumexperts.com/wp-content/uploads/2013/12/Absolute-barrieres-.jpg</image>
+  </museum>
+  <museum ID="14">
+    <name>Museum of Modern Art</name>
+    <doe>1929</doe>
+    <location>United States of America</location>
+    <address>11 West 53 Street, Manhattan</address>
+    <famousArts ID="m14">
+      <famousArt>Les Demoiselles dAvignon</famousArt>
+      <famousArt>Reflections of Clouds on Water</famousArt>
+      <famousArt>The Song of Love</famousArt>
+    </famousArts>
+    <builders ID="b14">
+      <builder>Aby Aldrich Rockefeller</builder>
+      <builder>Lillie P. Bliss</builder>
+      <builder>Mary Quinn Sullivan</builder>
+    </builders>
+    <image>https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg</image>
+  </museum>
+  <museum ID="15">
+    <name>Tate Modern</name>
+    <doe>2000</doe>
+    <location>United Kingdom</location>
+    <address>Bankside; London, SE1</address>
+    <famousArts ID="m15">
+      <famousArt>I Do, I Undo, I Redo</famousArt>
+      <famousArt>Double Bind</famousArt>
+      <famousArt>Marsyas</famousArt>
+    </famousArts>
+    <builders ID="b15">
+      <builder>Sir Giles Gilbert Scott</builder>
+    </builders>
+    <image>http://www.vigoenfotos.com/londres/imagenes/london/tate_modern_museum/g_vigoenfotos_6453m.jpg</image>
+  </museum>
+</museums>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-stylesheet type="text/xsl" href="assign3_style.xsl"?>-->
+
+<artists>
+  <artist ID="6">
+    <firstname>Andy</firstname>
+    <lastname>Warhol</lastname>
+    <birth>1928</birth>
+    <death>1987</death>
+    <pol>New York City</pol>
+    <genres ID="g6">
+      <genre>Pop Art</genre>
+      <genre>Modern Art</genre>
+      <genre>Abstract Impressionism</genre>
+    </genres>
+    <famousArts ID="f6">
+      <famousArt>Campbells Soup Can</famousArt>
+      <famousArt>Green Coca-Cola Bottles</famousArt>
+      <famousArt>Mickey Mouse</famousArt>
+      <famousArt>Flowers Series</famousArt>
+      <famousArt>Eight Elvises</famousArt>
+    </famousArts>
+    <image>https://upload.wikimedia.org/wikipedia/commons/4/42/Andy_Warhol_1975.jpg</image>
+  </artist>
+  <artist ID="7">
+    <firstname>Claude</firstname>
+    <lastname>Monet</lastname>
+    <birth>1840</birth>
+    <death>1926</death>
+    <pol>Paris</pol>
+    <genres ID="g7">
+      <genre>Impressionism</genre>
+      <genre>Realism</genre>
+    </genres>
+    <famousArts ID="f7">
+      <famousArt>San Giorgio Maggiore at Dusk</famousArt>
+      <famousArt>Poplar Series</famousArt>
+      <famousArt>Haystack Series</famousArt>
+      <famousArt>Impression, Sunrise</famousArt>
+      <famousArt>Rouen Cathedral Series</famousArt>
+    </famousArts>
+      <image>https://www.thefamouspeople.com/profiles/images/claude-monet-3.jpg</image>
+    </artist>
+  <artist ID="8">
+    <firstname>Leonardo</firstname>
+    <lastname>Da Vinci</lastname>
+    <birth>1452</birth>
+    <death>1519</death>
+    <pol>Milan</pol>
+    <genres ID="g8">
+      <genre>Renaissance</genre>
+    </genres>
+    <famousArts ID="f8">
+      <famousArt>Mona Lisa</famousArt>
+      <famousArt>The Last Supper</famousArt>
+      <famousArt>St. John the Baptist</famousArt>
+      <famousArt>Female Head</famousArt>
+      <famousArt>Head of Christ</famousArt>
+    </famousArts>
+    <image>https://news.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg</image>
+  </artist>
+  <artist ID="9">
+    <firstname>Michelangelo</firstname>
+    <lastname>di Lodovico Buonarroti Simoni</lastname>
+    <birth>1475</birth>
+    <death>1564</death>
+    <pol>Italy</pol>
+    <genres ID="g9">
+      <genre>Renaissance</genre>
+    </genres>
+    <famousArts ID="f9">
+      <famousArt>The Sistine Chapel Ceiling</famousArt>
+      <famousArt>The Last Judgement</famousArt>
+      <famousArt>Battle of Cascina</famousArt>
+      <famousArt>Torment of Saint Anthony</famousArt>
+      <famousArt>The Entombment</famousArt>
+    </famousArts>
+    <image>https://media1.britannica.com/eb-media/46/75046-004-E437D9A2.jpg</image>
+  </artist>
+  <artist ID="10">
+    <firstname>Vincent</firstname>
+    <lastname>Van Gogh</lastname>
+    <birth>1853</birth>
+    <death>1890</death>
+    <pol>Paris</pol>
+    <genres ID="g10">
+      <genre>Impressionism</genre>
+      <genre>Realism</genre>
+      <genre>Post-impressionism</genre>
+    </genres>
+    <famousArts ID="f10">
+      <famousArt>Starry Night</famousArt>
+      <famousArt>Self-portrait</famousArt>
+      <famousArt>The Potato Eaters</famousArt>
+      <famousArt>Irises</famousArt>
+      <famousArt>Café Terrace at Night</famousArt>
+    </famousArts>
+    <image>https://www.artble.com/imgs/3/2/c/55784/vincent_van_gogh.jpg</image>
+  </artist>
+</artists>

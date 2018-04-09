@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-stylesheet type="text/xsl" href="assign3_style.xsl"?>-->
+<galleries>
+  <gallery ID="11">
+    <name>Art Gallery of Ontario</name>
+    <doe>1900</doe>
+    <location>Canada</location>
+    <address>317 Dundas St W, Toronto ON M5T 1G4</address>
+    <famousArts ID="g11">
+      <famousArt>The Baroque</famousArt>
+      <famousArt>Adam and Eve</famousArt>
+      <famousArt>The Crucified Christ</famousArt>
+    </famousArts>
+    <builders ID="b11">
+      <builder>Group of private members of the Ontario Society of Artists</builder>
+    </builders>
+    <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/AGO_at_dusk.jpg/1200px-AGO_at_dusk.jpg</image>
+  </gallery>
+  <gallery ID="12">
+    <name>Uffizi Gallery</name>
+    <doe>1581</doe>
+    <location>Italy</location>
+    <address>Piazzale degli Uffizi, 6, 50122 Firenze FI</address>
+    <famousArts ID="g12">
+      <famousArt>Santa Trinita Maestà</famousArt>
+      <famousArt>Primavera</famousArt>
+      <famousArt>The Birth of Venus</famousArt>
+    </famousArts>
+    <builders ID="b12">
+      <builder>Giorgio Vasari</builder>
+      <builder>Alfonso Parigi</builder>
+    </builders>
+    <image>https://nationalpostcom.files.wordpress.com/2016/07/travel_trip_essentials_florence_47275094.jpg</image>
+  </gallery>
+</galleries>
