@@ -13,7 +13,7 @@
                         <th>Death Year</th>
                         <th>Place of Living</th>
                     </tr>
-                    <xsl:for-each select="/artworks/artwrork/artist">
+                    <xsl:for-each select="./artworks/artwork/artists/artist">
                         <tr bgcolor="#D6CE93">
                             <td><xsl:value-of select="@ID"/></td>
                             <td><xsl:value-of select="./firstname"/></td>
@@ -30,25 +30,21 @@
                     <tr bgcolor="#EFEBCE">
                         <th>Artwork ID</th>
                         <th>Piece</th>
-                         <th>Type</th>
-                         <th>Dimension</th>
+                        <th>Artist Name</th>
+                        <th>Type</th>
+                        <th>Dimensions</th>
                         <th>Year</th>
-                         <th>Price</th>
-                        <th>First name</th>
-                         <th>Last name</th>
-                         <th>Location</th>                       
+                        <th>Price</th>
                     </tr>
-                    <xsl:for-each select="/artworks/artwrork">
+                    <xsl:for-each select="./artworks/artwork">
                         <tr bgcolor="#D6CE93">
                             <td><xsl:value-of select="@ID"/></td>
                             <td><xsl:value-of select="./piece"/></td>
-                             <td><xsl:value-of select="./type"/></td>
-                             <td><xsl:value-of select="./dimension"/></td>
-                             <td><xsl:value-of select="./year"/></td>
+                            <td><xsl:value-of select="./artists/artist/firstname"/><br></br> <xsl:value-of select="./artists/artist/lastname" /></td>
+                            <td><xsl:value-of select="./type"/></td>
+                            <td><xsl:value-of select="./dimension"/></td>
+                            <td><xsl:value-of select="./year"/></td>
                             <td><xsl:value-of select="./price"/></td>
-                            <td><xsl:value-of select="./artist/firstname"/></td>
-                            <td> <xsl:value-of select="./artist/lastname" /></td>   
-                            <td> <xsl:value-of select="./museum/location" /></td>                                 
                         </tr>
                     </xsl:for-each>
                 </table>
@@ -56,20 +52,19 @@
                 <br></br>
                 <table border="1">
                     <tr bgcolor="#EFEBCE">
-                        <th>Museum Name</th>
-                        <th>Date of Establishment</th>
+                        <th>Museum ID</th>
+                        <th>Name</th>
                         <th>Location</th>
                         <th>Address</th>
-                        <th>Museum ID</th>
+                        <th>Date of Establishment</th>
                     </tr>
-                    <xsl:for-each select="/artworks/artwrork">
+                    <xsl:for-each select="./artworks/artwork/museums/museum">
                         <tr bgcolor="#D6CE93">
-                         	<td><xsl:value-of select="./museum/location"/></td>
-                         	<td><xsl:value-of select="./doe"/></td>
-                         	 <td><xsl:value-of select="./museum/country"/></td>
-                            <td><xsl:value-of select="./museum/address"/></td>
-                            <td><xsl:value-of select="./museum/@ID" /></td>
-                            
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./name"/></td>
+                            <td><xsl:value-of select="./location" /></td>
+                            <td><xsl:value-of select="./address"/></td>
+                            <td><xsl:value-of select="./doe"/></td>
                         </tr>
                     </xsl:for-each>
                 </table>
@@ -93,6 +88,152 @@
                         </tr>
                     </xsl:for-each>
                 </table>
+                <!--Genre-->
+                <br></br>
+                <table border="1">
+                    <tr bgcolor="#EFEBCE">
+                        <th>Genre ID</th>
+                        <th>Genre</th>
+                    </tr>
+                    <xsl:for-each select="./artworks/artwork">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./genre"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/artists/artist/genres/genre">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="../../@ID"/></td>
+                            <td><xsl:value-of select="./name"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                <!--Images-->
+                <br></br>
+                <table border="1">
+                    <tr bgcolor="#EFEBCE">
+                        <th>Image ID</th>
+                        <th>Name</th>
+                    </tr>
+                    <xsl:for-each select="./artworks/artwork">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./image"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/museums/museum">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./image"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/artists/artist">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./image"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/galleries/gallery">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./image"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                <!--Shopping Cart-->
+                <br></br>
+                <table border="1">
+                    <tr bgcolor="#EFEBCE">
+                        <th>Shopping Cart Item</th>
+                        <th>Shopping Cart Price</th>
+                    </tr>
+                    <xsl:for-each select="./artworks/artwork">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="./piece"/></td>
+                            <td><xsl:value-of select="./shoppingcartPrice"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                <!--builder-->
+                <br></br>
+                <table border="1">
+                    <tr bgcolor="#EFEBCE">
+                        <th>Builder ID</th>
+                        <th>Name</th>
+                    </tr>
+                    <xsl:for-each select="./artworks/artwork/galleries/gallery/builders/builder">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="../../@ID"/></td>
+                            <td><xsl:value-of select="./name"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/museums/museum/builders/builder">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="../../@ID"/></td>
+                            <td><xsl:value-of select="./name"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                <!--Famous Pieces-->
+                <br></br>
+                <table border="1">
+                    <tr bgcolor="#EFEBCE">
+                        <th>ID</th>
+                        <th>Famous Piece</th>
+                    </tr>
+                    <xsl:for-each select="./artworks/artwork/artists/artist/famousArts/famousArt">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="../../@ID"/></td>
+                            <td><xsl:value-of select="./piece"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/museums/museum/famousArts/famousArt">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="../../@ID"/></td>
+                            <td><xsl:value-of select="./piece"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/galleries/gallery/famousArts/famousArt">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="../../@ID"/></td>
+                            <td><xsl:value-of select="./piece"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                <!--Subjects-->
+                <br></br>
+                <table border="1">
+                    <tr bgcolor="#EFEBCE">
+                        <th>ID</th>
+                        <th>Name</th>
+                    </tr>
+                    <xsl:for-each select="./artworks/artwork">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./piece"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/artists/artist">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./firstname"/><br></br><xsl:value-of select="./lastname"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/museums/museum">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./name"/></td>
+                        </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="./artworks/artwork/galleries/gallery">
+                        <tr bgcolor="#D6CE93">
+                            <td><xsl:value-of select="@ID"/></td>
+                            <td><xsl:value-of select="./name"/></td>
+                        </tr>
+                    </xsl:for-each>
+
+                </table>
+
             </body>
         </html>
     </xsl:template>
