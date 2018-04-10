@@ -1,254 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="assign3_artistsstyle.xsl"?>
+<?xml-stylesheet type="text/xsl" href="assign3_artworksstyle.xsl"?>
 <artworks>
-	<artwork ID="1">
-		<piece>Campbell's Soup Can</piece>
-		<artists>
-			<artist ID="6">
-				<firstname>Andy</firstname>
-				<lastname>Warhol</lastname>
-				<birth>1928</birth>
-				<death>1987</death>
-				<pol>New York City</pol>
-				<genres ID="g6">
-					<genre>Pop Art</genre>
-					<genre>Modern Art</genre>
-					<genre>Abstract Impressionism</genre>
-				</genres>
-				<famousArts ID="f6">
-					<famousArt>Campbells Soup Can</famousArt>
-					<famousArt>Green Coca-Cola Bottles</famousArt>
-					<famousArt>Mickey Mouse</famousArt>
-					<famousArt>Flowers Series</famousArt>
-					<famousArt>Eight Elvises</famousArt>
-				</famousArts>
-				<image>https://upload.wikimedia.org/wikipedia/commons/4/42/Andy_Warhol_1975.jpg</image>
-			</artist>
-		</artists>
-		<type>Synthetic Polymer Paint</type>
-		<dimension>51cm x 41cm</dimension>
-		<year>1962</year>
-		<price>N/A</price>
-		<museums>
-			<museum ID="14">
-				<name>Museum of Modern Art</name>
-				<doe>1929</doe>
-				<location>United States of America</location>
-				<address>11 West 53 Street, Manhattan</address>
-				<famousArts ID="m14">
-					<famousArt>Les Demoiselles dAvignon</famousArt>
-					<famousArt>Reflections of Clouds on Water</famousArt>
-					<famousArt>The Song of Love</famousArt>
-				</famousArts>
-				<builders ID="b14">
-					<builder>Aby Aldrich Rockefeller</builder>
-					<builder>Lillie P. Bliss</builder>
-					<builder>Mary Quinn Sullivan</builder>
-				</builders>
-				<image>https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg</image>
-			</museum>
-		</museums>
-		<shoppingcartPrice>200</shoppingcartPrice>
-		<genre>Pop Art</genre>
-		<artworkImage>http://1.bp.blogspot.com/-zekY4NLo1_c/UD_uVdNgEnI/AAAAAAAAAnA/rZuPJJ35Y4w/s1600/32+campbells.jpeg</artworkImage>
-	</artwork>
-	<artwork ID="2">
+	<artwrork ID="1">
+		<piece>Campbells Soup Can</piece>
+		<artist ID = "6">
+			<firstname>Andy</firstname>
+			<lastname>Warhol</lastname>
+			<birth>1928</birth>
+	    		<death>1987</death>
+	    		<pol>New York City</pol>
+		</artist>
+			<type>Synthetic Polymer Paint</type>
+			<dimension>51cm x 41cm</dimension>
+			<year>1962</year>
+			<price>N/A</price>
+		<museum ID = "13">
+			<location>Museum of Modern Art</location>
+			<address>11 West 53 Street, Manhattan </address>
+			<country>United States</country>
+		</museum>
+			<shoppingcart>200</shoppingcart>
+			<genre>Pop Art</genre>
+			<image>http://1.bp.blogspot.com/-zekY4NLo1_c/UD_uVdNgEnI/AAAAAAAAAnA/rZuPJJ35Y4w/s1600/32+campbells.jpeg</image>
+	</artwrork>
+	<artwrork ID="2">
 		<piece>Starry Night</piece>
-		<artists>
-			<artist ID="10">
-				<firstname>Vincent</firstname>
-				<lastname>Van Gogh</lastname>
-				<birth>1853</birth>
-				<death>1890</death>
-				<pol>Paris</pol>
-				<genres ID="g10">
-					<genre>Impressionism</genre>
-					<genre>Realism</genre>
-					<genre>Post-impressionism</genre>
-				</genres>
-				<famousArts ID="f10">
-					<famousArt>Starry Night</famousArt>
-					<famousArt>Self-portrait</famousArt>
-					<famousArt>The Potato Eaters</famousArt>
-					<famousArt>Irises</famousArt>
-					<famousArt>Café Terrace at Night</famousArt>
-				</famousArts>
-				<image>https://www.artble.com/imgs/3/2/c/55784/vincent_van_gogh.jpg</image>
-			</artist>
-		</artists>
+	<artist ID = "7">
+		<firstname>Vincent</firstname>
+		<lastname>Van Gogh</lastname>
+		 <birth>1853</birth>
+    		<death>1890</death>
+    		<pol>Paris</pol>
+	</artist>
 		<type>Oil Paint</type>
 		<dimension>73.7cm x 92.1cm</dimension>
 		<year>1889</year>
 		<price>100000000</price>
-		<museums>
-			<museum ID="14">
-				<name>Museum of Modern Art</name>
-				<doe>1929</doe>
-				<location>United States of America</location>
-				<address>11 West 53 Street, Manhattan</address>
-				<famousArts ID="f14">
-					<famousArt>Les Demoiselles dAvignon</famousArt>
-					<famousArt>Reflections of Clouds on Water</famousArt>
-					<famousArt>The Song of Love</famousArt>
-				</famousArts>
-				<builders ID="b14">
-					<builder>Aby Aldrich Rockefeller</builder>
-					<builder>Lillie P. Bliss</builder>
-					<builder>Mary Quinn Sullivan</builder>
-				</builders>
-				<image>https://static.dezeen.com/uploads/2016/04/moma-expansion-diller-scofidio-renfro-new-york-usa_dezeen_1568_0.jpg</image>
-			</museum>
-		</museums>
+	<museum ID = "13">
+		<location>Museum of Modern Art</location>
+		<address>11 West 53 Street, Manhattan </address>
+		<country>United States</country>
+	</museum>
 		<shoppingcart>120</shoppingcart>
 		<genre>Post-impressionism</genre>
 		<image>https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg</image>
-	</artwork>
-	<artwork ID="3">
+	</artwrork>
+	<artwrork ID="3">
 		<piece>The Birth of Venus</piece>
-		<artists>
-			<artist ID="7">
-				<firstname>Sandro</firstname>
-				<lastname>Botticelli</lastname>
-				<birth>1445</birth>
-				<death>1510</death>
-				<pol>Florence, Italy</pol>
-				<genres ID="g7">
-					<genre>Renaissance</genre>
-				</genres>
-				<famousArts ID="f7">
-					<famousArt>The Birth of Venus</famousArt>
-					<famousArt>Primavera</famousArt>
-					<famousArt>Adoration of the Magi</famousArt>
-					<famousArt>Mars and Venus</famousArt>
-					<famousArt>Madonna of the Magnificent</famousArt>
-				</famousArts>
-				<image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sandro_Botticelli_083.jpg/1200px-Sandro_Botticelli_083.jpg</image>
-			</artist>
-		</artists>
+	<artist ID = "8">
+		<firstname>Sandro</firstname>
+		<lastname>Botticello</lastname>
+	</artist>
 		<type>Tempera</type>
 		<dimension>672.5cm x 278.9cm</dimension>
 		<year>1486</year>
 		<price>N/A</price>
-		<galleries>
-			<gallery ID="12">
-				<name>Uffizi Gallery</name>
-				<doe>1581</doe>
-				<location>Italy</location>
-				<address>Piazzale degli Uffizi, 6, 50122 Firenze FI</address>
-				<famousArts ID="f12">
-					<famousArt>Santa Trinita Maestà</famousArt>
-					<famousArt>Primavera</famousArt>
-					<famousArt>The Birth of Venus</famousArt>
-				</famousArts>
-				<builders ID="b12">
-					<builder>Giorgio Vasari</builder>
-					<builder>Alfonso Parigi</builder>
-				</builders>
-				<image>https://nationalpostcom.files.wordpress.com/2016/07/travel_trip_essentials_florence_47275094.jpg</image>
-			</gallery>
-		</galleries>
+	<museum ID = "14">
+		<location>Uffizi Gallery</location>
+		<address>Piazzale degli Uffizi, 6, 50122 Firenze FI</address>
+		<country>Italy</country>
+	</museum >
 		<shoppingcart>250</shoppingcart>
 		<genre>Renaissance</genre>
 		<image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/450px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg</image>
-	</artwork>
-	<artwork ID="4">
-		<piece>Mona Lisa</piece>
-		<artists>
-			<artist ID="8">
-				<firstname>Leonardo</firstname>
-				<lastname>Da Vinci</lastname>
-				<birth>1452</birth>
-				<death>1519</death>
-				<pol>Milan</pol>
-				<genres ID="g8">
-					<genre>Renaissance</genre>
-				</genres>
-				<famousArts ID="f8">
-					<famousArt>Mona Lisa</famousArt>
-					<famousArt>The Last Supper</famousArt>
-					<famousArt>St. John the Baptist</famousArt>
-					<famousArt>Female Head</famousArt>
-					<famousArt>Head of Christ</famousArt>
-				</famousArts>
-				<image>https://news.nationalgeographic.com/content/dam/news/2017/11/2/book-talk-leonardo-da-vinci/01-leonardo-da-vinci-book-talk.jpg</image>
-			</artist>
-		</artists>
-		<type>Oil Paint</type>
-		<dimension>77m x 53cm</dimension>
-		<year>1503</year>
+	</artwrork>
+	<artwrork ID="4">
+		<piece>The Last Supper</piece>
+	<artist ID = "9">
+		<firstname>Leonardo</firstname>
+		<lastname>Da Vinci</lastname>
+		<birth>1452</birth>
+    		<death>1519</death>
+    		<pol>Milan</pol>
+	</artist>
+		<type>Fresco-secco</type>
+		<dimension>460cm x 880cm</dimension>
+		<year>1495</year>
 		<price>N/A</price>
-		<museums>
-			<museum ID="13">
-				<name>The Louvre</name>
-				<doe>1793</doe>
-				<location>France</location>
-				<address>Rue de Rivoli, 75001 Paris</address>
-				<famousArts ID="f13">
-					<famousArt>The Lacemaker</famousArt>
-					<famousArt>Bathsheba at her Bath</famousArt>
-					<famousArt>St. John the Baptist</famousArt>
-				</famousArts>
-				<builders ID="b13">
-					<builder>Pierre Lescot</builder>
-					<builder>Hector Lefuel</builder>
-					<builder>Louis Visconti</builder>
-					<builder>Louis Le Vau</builder>
-				</builders>
-				<image>https://lh5.googleusercontent.com/p/AF1QipOWiV1r2xO_9DbPoFE-Bgbd0folXkC_vyWzV-kH=w240-h160-k-no</image>
-			</museum>
-		</museums>
+	<museum ID = "15">
+		<location>Convent of Santa Maria delle Grazie</location>
+		<address> Piazza di Santa Maria delle Grazie, 20123 Milano </address>
+		<country>Italy</country>
+	</museum>
 		<shoppingcart>300</shoppingcart>
 		<genre>Renaissance</genre>
 		<image>http://milanostyle.com/wp-content/uploads/Last-Supper-Da-Vinci-1495.jpg</image>
-	</artwork>
-	<artwork ID="5">
+	</artwrork>
+	<artwrork ID="5">
 		<piece>The Weeping Woman</piece>
-		<artists>
-			<artist ID="9">
-				<firstname>Pablo</firstname>
-				<lastname>Picasso</lastname>
-				<birth>1881</birth>
-				<death>1973</death>
-				<pol>France</pol>
-				<genres ID="g9">
-					<genre>Cubism</genre>
-					<genre>Surrealism</genre>
-					<genre>Expressionism</genre>
-					<genre>Post-Impressionism</genre>
-				</genres>
-				<famousArts ID="f9">
-					<famousArt>The Old Guitarist</famousArt>
-					<famousArt>Girl before a Mirror</famousArt>
-					<famousArt>The Accordionist</famousArt>
-					<famousArt>Celestina</famousArt>
-					<famousArt>Ma Jolie</famousArt>
-				</famousArts>
-				<image>https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzU0MDk2MTQx/pablo-picasso-9440021-1-402.jpg</image>
-			</artist>
-		</artists>
+	<artist ID = "10">
+		<firstname>Pablo</firstname>
+		<lastname>Picaso</lastname>
+	</artist>
 		<type>Oil on Canvas</type>
 		<dimension>60cm x 49cm</dimension>
 		<year>1937</year>
 		<price>N/A</price>
-		<museums>
-			<museum ID="15">
-				<name>Tate Modern</name>
-				<doe>2000</doe>
-				<location>United Kingdom</location>
-				<address>Bankside; London, SE1</address>
-				<famousArts ID="f15">
-					<famousArt>I Do, I Undo, I Redo</famousArt>
-					<famousArt>Double Bind</famousArt>
-					<famousArt>Marsyas</famousArt>
-				</famousArts>
-				<builders ID="b15">
-					<builder>Sir Giles Gilbert Scott</builder>
-				</builders>
-				<image>http://www.vigoenfotos.com/londres/imagenes/london/tate_modern_museum/g_vigoenfotos_6453m.jpg</image>
-			</museum>
-		</museums>
+	<museum ID = "16">
+		<location>Tate Modern</location>
+		<address>Bankside; London, SE1 </address>
+		<country>United Kingdom</country>
+	</museum>
 		<shoppingcart>140</shoppingcart>
 		<genre>Cubism</genre>
 		<image>https://i.pinimg.com/originals/6c/f6/78/6cf6785c2931400bc048b06a597f23bd.jpg</image>
-	</artwork>
-</artworks>
+	</artwrork>
+	</artworks>
